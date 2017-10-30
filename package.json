@@ -1,9 +1,10 @@
 {
-  "name": "thebestmotherfuckingwebsite",
+  "name": "gaenseri.ch",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
+    "browser-sync": "^2.18.13",
     "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-cssnano": "^2.1.2",
@@ -11,10 +12,8 @@
     "gulp-less": "^3.1.0",
     "gulp-pug": "^3.0.2"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Denys Vitali",
   "license": "MIT"
 }
