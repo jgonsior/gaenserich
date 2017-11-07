@@ -40,6 +40,11 @@ gulp.task('copy-watch', ['copy'], function(done) {
   done();
 })
 
+gulp.task('fonts', function() {
+  return gulp.src('node_modules/font-awesome/fonts/*')
+    .pipe(gulp.dest('dist/fonts'))
+})
+
 gulp.task('css', () => {
   return gulp.src('src/less/*.less')
     .pipe(less())
@@ -55,7 +60,7 @@ gulp.task('watch', () => {
   return gulp.watch('src/**/*', ['views', 'less', 'copy']);
 });
 
-gulp.task('build', ['views', 'css', 'copy']);
+gulp.task('build', ['views', 'fonts', 'css', 'copy']);
 
 gulp.task('cleanandbuild', ['clean', 'build']);
 
