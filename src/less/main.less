@@ -6,6 +6,8 @@
 @import "@{fa_path}/path.less";
 @import "@{fa_path}/core.less";
 @import "@{fa_path}/icons.less";
+@import "@{fa_path}/list.less";
+@import "@{fa_path}/stacked.less";
 
 @bodybgColor: #fafafa;
 @bodyTextColor: #555;
@@ -29,7 +31,7 @@ body{
     text-align: justify;
 }
 
-a{
+a {
     color: @linkColor;
 
     &:visited{
@@ -37,18 +39,37 @@ a{
     }
 }
 
-ul{
-    li{
-        img{
-            height: 1em;
-        }
-    }
-}
-
 .centered {
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+h1 {
+    padding-left: 0.2em;
+    margin-bottom: 0.3em;
+    font-size: 2.8em;
+}
+
+
+#contacts {
+    padding-left: 0;
+    margin-top: 0.3em;
+
+    li {
+        font-size: 1.4em;
+        list-style-type: none;
+        display: inline;
+        margin-right: 0.1em;
+    }
+    a {
+        color: @bodyTextColor;
+        text-decoration: none;
+
+        &:hover {
+            color: @linkColor;
+        }
+    }
 }
 
 
