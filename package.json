@@ -6,6 +6,7 @@
   "dependencies": {
     "browser-sync": "^2.18.13",
     "del": "^2.2.0",
+    "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
     "gulp-cssnano": "^2.1.2",
     "gulp-html-minifier": "^0.1.8",
