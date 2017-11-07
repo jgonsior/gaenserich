@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/jgonsior
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://gaenseri.ch
+  * I am jgonsior (https://keybase.io/jgonsior) on keybase.
+  * I have a public key ASBs7HUjyuhvs6Op54pShBLHRR9UBF_Blx1ORxAI3gadIgo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01206cec7523cae86fb3a3a9e78a528412c7451f54045fc1971d4e471008de069d220a",
+            "host": "keybase.io",
+            "kid": "01206cec7523cae86fb3a3a9e78a528412c7451f54045fc1971d4e471008de069d220a",
+            "uid": "e1a4e8d35be74cb63e74a82f02412119",
+            "username": "jgonsior"
+        },
+        "service": {
+            "hostname": "gaenseri.ch",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.21"
+    },
+    "ctime": 1492207166,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1492207150,
+        "hash": "d093346d67ab943189d78f0c5db40fed3df3ed8dcf2eb59c8d60e94bec68aea13249fc9785d500df45c6810e18dac8522a92f398f9eb0ed33c12d6536cd38add",
+        "seqno": 1020155
+    },
+    "prev": "4b9d57836912c05f20b87e8e987109aa667b6ae32d5b7029da14904e06a14f90",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgbOx1I8rob7OjqeeKUoQSx0UfVARfwZcdTkcQCN4GnSIKp3BheWxvYWTFAvR7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNmNlYzc1MjNjYWU4NmZiM2EzYTllNzhhNTI4NDEyYzc0NTFmNTQwNDVmYzE5NzFkNGU0NzEwMDhkZTA2OWQyMjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNmNlYzc1MjNjYWU4NmZiM2EzYTllNzhhNTI4NDEyYzc0NTFmNTQwNDVmYzE5NzFkNGU0NzEwMDhkZTA2OWQyMjBhIiwidWlkIjoiZTFhNGU4ZDM1YmU3NGNiNjNlNzRhODJmMDI0MTIxMTkiLCJ1c2VybmFtZSI6Impnb25zaW9yIn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJnYWVuc2VyaS5jaCIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjIxIn0sImN0aW1lIjoxNDkyMjA3MTY2LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0OTIyMDcxNTAsImhhc2giOiJkMDkzMzQ2ZDY3YWI5NDMxODlkNzhmMGM1ZGI0MGZlZDNkZjNlZDhkY2YyZWI1OWM4ZDYwZTk0YmVjNjhhZWExMzI0OWZjOTc4NWQ1MDBkZjQ1YzY4MTBlMThkYWM4NTIyYTkyZjM5OGY5ZWIwZWQzM2MxMmQ2NTM2Y2QzOGFkZCIsInNlcW5vIjoxMDIwMTU1fSwicHJldiI6IjRiOWQ1NzgzNjkxMmMwNWYyMGI4N2U4ZTk4NzEwOWFhNjY3YjZhZTMyZDViNzAyOWRhMTQ5MDRlMDZhMTRmOTAiLCJzZXFubyI6NywidGFnIjoic2lnbmF0dXJlIn2jc2lnxEByHktjb4MgdP/WSYnv1IqjccIJvBXkfXK6fL+IJ5GMBYsL3bIKrvWH7fJyGDLPH4BrJw+sPe79GZo2Cllhi1MOqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgqfpAVFHFDjCKKLYjUVGBeEqmTwN0HtHPwcRJewyWz4SjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jgonsior
+
+==================================================================
