@@ -43,6 +43,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -51,10 +52,13 @@ html{
 body{
     font-family: "simplifica", "new_ciclefina", "Raleway", "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: @bodyTextColor;
-    font-size: 18px;
-    margin: 2em auto;
-    max-width: 40em;
-    padding: 1em;
+    font-size: 16px;
+    margin: 2rem auto;
+    
+    max-width: 50em;
+    min-width: 500px;
+    
+    padding: 1rem;
     line-height: 1.4;
     text-align: justify;
 }
@@ -68,30 +72,29 @@ a {
 }
 
 h1 {
-    padding-left: 0.2em;
-    font-size: 5em;
+    padding-left: 0.2rem;
+    font-size: 5rem;
     text-align: center;
     font-weight: bold;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2rem;
     text-align: center;
-    margin-top: 0.5em;
-    margin-bottom: 0.7em;
+    margin-top: 0.5rem;
 }
 
 p {
-    font-family: "new_ciclefina";
-    font-size: 1.15em;
+    font-size: 1.8rem;
     color: #222;
+    margin-top: 3%;
 }
 
 #contacts {
     text-align: center;
     
     li {
-        font-size: 1em;
+        font-size: 3vw;
         list-style-type: none;
         display: inline-block;
     }
@@ -105,12 +108,27 @@ p {
     }
 }
 
-img {
+div.img {
     float: left;
-    margin-right: 1.5em;
-    width: 14em;
-    height: 14em;
+    width: 32%;
+    margin-right: 3%;
+    margin-top: 3%;
 }
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 1000px) {
+    #contacts {
+        li {
+            font-size: 30px;
+        }
+    }
+}
+
 
 @media screen and (max-width: 500px) {
 
@@ -118,41 +136,47 @@ img {
         text-align: left;
         margin: 0;
         padding-top: 0;
-        min-width: 15em;
+        min-width: 15rem;
     }
 
     h1 {
-        margin-top: 0.2em;
+        margin-top: 0.2rem;
     }
 
     h1, h2 {
-        text-align: justify;
+        //text-align: justify;
     }
 
-    img {
+    div.img {
+        float: none;
         margin-left: auto;
         margin-right: auto;
-        display: block;
-        margin-bottom: 1em;
+        margin-bottom: 1rem;
+        width: 60%;
     }
 
     p {
+        padding-left: 1vw;
+        padding-right: 1vw;
         clear: both;
+        font-size: 1.5rem;
     }
 
     h1 {
-        font-size: 3em;
+        font-size: 3rem;
     }
 
     h2 {
-        font-size: 1.8em;
+        font-size: 1.8rem;
     }
 
     #contacts {
-        width: 15em;
+        width: 15rem;
+        margin-left: auto;
+        margin-right: auto;
 
         li{
-            font-size: 1.2em;
+            font-size: 1.6rem;
         }
     }
 }
