@@ -10,15 +10,11 @@ html(lang="en-US")
     body
         h1 Julius Gonsior
 
-        ul#contacts
-            li #[a.fa-stack.fa-lg(href="mailto:julius@gaenseri.ch") #[i.fa.fa-square.fa-stack-2x] #[i.fa.fa-envelope.fa-stack-1x.fa-inverse]]
-            li #[a.fa-stack.fa-lg(href="https://keybase.io/jgonsior/sigs/LfZ5xSVadUUkVYLj9NxNEEX5iz1e1cLUDrBf") #[i.fa.fa-square.fa-stack-2x] #[i.fa.fa-key.fa-stack-1x.fa-inverse]]
-            li #[a.fa-stack.fa-lg(href="https://www.linkedin.com/in/julius-gonsior-2790b3141/") #[i.fa.fa-square.fa-stack-2x] #[i.fa.fa-linkedin.fa-stack-1x.fa-inverse]]
-            li #[a.fa-stack.fa-lg(href="https://github.com/jgonsior") #[i.fa.fa-square.fa-stack-2x] #[i.fa.fa-github.fa-stack-1x.fa-inverse]]
-            li #[a.fa-stack.fa-lg(href="https://telegram.me/jgonsior") #[i.fa.fa-square.fa-stack-2x] #[i.fa.fa-telegram.fa-stack-1x.fa-inverse]]
-            li #[a.fa-stack.fa-lg(href="https://twitter.com/juliusgonsior") #[i.fa.fa-square.fa-stack-2x] #[i.fa.fa-twitter.fa-stack-1x.fa-inverse]]
-            li #[a.fa-stack.fa-lg(href="xmpp://julius@ifsr.de") #[i.fa.fa-square.fa-stack-2x] #[i.fa.fa-comment.fa-stack-1x.fa-inverse]]
+    - var contacts = [{href: "mailto:julius@gaenseri.ch", icon: "fa-envelope"}, {href: "https://keybase.io/jgonsior/sigs/LfZ5xSVadUUkVYLj9NxNEEX5iz1e1cLUDrBf", icon: "fa-key"}, {href: "https://linkedin.com/in/julius-gonsior-2790b3141/", icon: "fa-linkedin"}, {href: "https://github.com/jgonsior", icon: "fa-github"}, {href: "https://telegram.me/jgonsior", icon: "fa-telegram"}, {href: "https://twitter.com/juliusgonsior", icon: "fa-twitter"}, {href: "xmpp://julius@ifsr.de", icon: "fa-comment"}, {href: "https://www.last.fm/user/ragadabing", icon: "fa-lastfm"}, {href: "https://www.strava.com/athletes/15823005", icon:"fa-bar-chart"}, {href:"https://letterboxd.com/Ragadabing/", icon:"fa-film"}, {href:"https://www.goodreads.com/user/show/70823847-julius-gonsior", icon: "fa-book"}]
 
+        ul#contacts
+            each contact, index in contacts
+                li #[a.fa-stack.fa-lg(href=contact.href) #[i.fa.fa-square.fa-stack-2x] #[i.fa.fa-stack-1x.fa-inverse(class=contact.icon)]]
 
         h2 Beg your pardon, but what does gaenseri.ch mean?
         img(src="img/goose.jpg" title="A nice drawing of a goose made by the amazing artist u/DyedKitty." width="200" height="200")
