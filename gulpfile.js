@@ -48,7 +48,7 @@ gulp.task('fonts', function() {
 gulp.task('css', () => {
   return gulp.src('src/less/*.less')
     .pipe(less())
-    .pipe(cssnano())
+    //.pipe(cssnano())
     .pipe(gulp.dest('dist/css'));
 });
 

@@ -10,6 +10,28 @@
 @import "@{fa_path}/list.less";
 @import "@{fa_path}/stacked.less";
 
+@finaPath: "/fonts/newcicle_fina_macroman/";
+
+@font-face {
+    font-family: 'new_ciclefina';
+    src: url('@{finaPath}New_Cicle_Fina-webfont.eot');
+    src: url('@{finaPath}New_Cicle_Fina-webfont.eot?#iefix') format('embedded-opentype'),
+         url('@{finaPath}New_Cicle_Fina-webfont.woff') format('woff'),
+         url('@{finaPath}New_Cicle_Fina-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'simplifica';
+    src: url('/fonts/simplifica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
 @bodybgColor: #fafafa;
 @bodyTextColor: #555;
 
@@ -18,17 +40,22 @@
 
 // ===============
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 html{
     background-color: @bodybgColor;
 }
 body{
-    font-family: "Raleway", "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "simplifica", "new_ciclefina", "Raleway", "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: @bodyTextColor;
-    font-size: 16px;
+    font-size: 18px;
     margin: 2em auto;
     max-width: 40em;
     padding: 1em;
-    line-height: 1.5;
+    line-height: 1.4;
     text-align: justify;
 }
 
@@ -42,22 +69,31 @@ a {
 
 h1 {
     padding-left: 0.2em;
-    margin-bottom: 0.2em;
-    font-size: 2.8em;
+    font-size: 5em;
     text-align: center;
     font-weight: bold;
 }
 
-#contacts {
-    padding-left: 0;
-    margin-top: 0;
+h2 {
+    font-size: 2em;
     text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.7em;
+}
 
+p {
+    font-family: "new_ciclefina";
+    font-size: 1.15em;
+    color: #222;
+}
+
+#contacts {
+    text-align: center;
+    
     li {
-        font-size: 1.3em;
+        font-size: 1em;
         list-style-type: none;
-        display: inline;
-        margin-right: 0.1em;
+        display: inline-block;
     }
     a {
         color: @bodyTextColor;
@@ -69,15 +105,11 @@ h1 {
     }
 }
 
-p {
-    padding-top: 0;
-}
-
 img {
     float: left;
-    margin-right: 1em;
-    width: 12.5em;
-    height: 12.5em;
+    margin-right: 1.5em;
+    width: 14em;
+    height: 14em;
 }
 
 @media screen and (max-width: 500px) {
@@ -86,36 +118,38 @@ img {
         text-align: left;
         margin: 0;
         padding-top: 0;
+        min-width: 15em;
     }
 
     h1 {
         margin-top: 0.2em;
     }
-   
+
+    h1, h2 {
+        text-align: justify;
+    }
+
     img {
         margin-left: auto;
         margin-right: auto;
-        width: 200px;
         display: block;
         margin-bottom: 1em;
     }
-    
+
     p {
         clear: both;
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 3em;
     }
 
     h2 {
-        font-size: 1.3em;
+        font-size: 1.8em;
     }
 
     #contacts {
         width: 15em;
-        margin-left: auto;
-        margin-right: auto;
 
         li{
             font-size: 1.2em;
