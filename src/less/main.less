@@ -47,7 +47,7 @@ html{
   background-color: @bodybgColor;
 }
 body{
-  font-family: "Barlow", "Raleway", "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "simplifica", "Raleway", "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: @bodyTextColor;
   font-size: 16px;
   margin: 2rem auto;
@@ -65,24 +65,25 @@ h1 {
   font-size: 5rem;
   text-align: center;
   font-weight: bold;
+  line-height: 1;
 }
 
 h2 {
+  padding-top: 1%;
   font-size: 2rem;
-  text-align: center;
-  margin-top: 0.5rem;
+  text-align: left;
 }
 
 p {
-  font-size: 1.45rem;
-  margin-top: 1.5%;
-  i {
+  font-size: 1.75rem;
+  /*i {
     color: @linkColor;
-  }
+  }*/
 }
 
 #contacts {
   text-align: center;
+  margin-bottom: 1rem;
 
   li {
     font-size: 3vw;
@@ -90,7 +91,7 @@ p {
     display: inline-block;
   }
   a {
-    color: @iconColor;
+    color: @bodyTextColor;
     text-decoration: none;
 
     &:hover {
