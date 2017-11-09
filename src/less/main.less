@@ -64,13 +64,13 @@ body{
   left: 0;
   right: 0;
   margin: auto;
+  padding-right: 2em;
 }
 
 article {
   min-width: 500px;
   max-width: 60em;
   display: flex;
-
 }
 
 #background {
@@ -99,9 +99,6 @@ article {
   color: @linkColor;
 }
 
-//v1: ganz nach links, bei <500px kommt sie weg, bis dahin IMMER neben Text -> img was float:left hat also
-//wenn ich de höhe verkleiner gibt es 2 umbrüche, der eine obere sieht besser aus! der wo das beg your pardon auf einer Zeiel ist
-
 h1 {
   padding-left: 0.2rem;
   font-size: 5rem;
@@ -126,7 +123,7 @@ p {
   margin-bottom: 1rem;
 
   li {
-    font-size: 2.7vh;
+    font-size: 2.7vw;
     list-style-type: none;
     display: inline-block;
   }
@@ -143,56 +140,63 @@ p {
 @media screen and (min-width: 1000px) {
   #contacts {
     li {
-      font-size: 20.5px;
+      font-size: 27px;
     }
   }
 }
-@media screen and (max-height: 39em) {
-
-  /*
+@media screen and (max-height: 510px) {
   body {
     padding: 1rem;
+    color: @linkColor;
+    display: unset;
   }
-  #content {
-    max-width: 40em;
-    min-width: 500px;
+  article {
     margin-left: auto;
     margin-right: auto;
-    position: unset;
-    top: unset;
-    left: unset;
-    transform: unset;
   }
-   */
+}
 
+@media  screen and (max-width: 700px) {
+  body {
+    color: darkblue;
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
+    display: unset;
+  }
+  #background {
+    display: none;
+  }
+  #content {
+    width: unset;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    clear: both;
+  }
+
+  article {
+    min-width: unset;
+  }
+  #contacts {
+    li {
+      font-size: 3.7vw;
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
+  body {
+    color: darkgreen;
+  }
 
   #content{
     min-width: 15rem;
   }
 
-  h1 {
-    margin-top: 0.2rem;
-  }
-
-  h1, h2 {
-    //text-align: justify;
-  }
-
-  div.img {
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem;
-    width: 60%;
+  article {
+    min-width: unset;
   }
 
   p {
-    padding-left: 1vw;
-    padding-right: 1vw;
-    clear: both;
     font-size: 1.4rem;
   }
 
@@ -211,12 +215,13 @@ p {
   }
 
   #contacts {
-    width: 18rem;
+    text-align: center;
+    max-width: 53vw;
     margin-left: auto;
     margin-right: auto;
 
     li{
-      font-size: 1.4rem;
+      font-size: 4.4vw;
     }
   }
 }
