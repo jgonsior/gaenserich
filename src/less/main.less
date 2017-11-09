@@ -47,6 +47,50 @@ html{
   background-color: @bodybgColor;
 }
 
+body{
+  font-family: "simplifica", "Raleway", "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: @bodyTextColor;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: justify;
+
+  align-items:center;
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+article {
+  min-width: 500px;
+  max-width: 60em;
+  display: flex;
+
+}
+
+#background {
+  float: left;
+  background: url("../img/goose.jpg") no-repeat;
+  background-size: contain;
+  width: 30%;
+
+  #layer {
+    background: rgba(250,250,250,0.7);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#content {
+  width: 70%;
+  float: right;
+}
+
 ::-moz-selection {
   color: @linkColor;
 }
@@ -55,24 +99,13 @@ html{
   color: @linkColor;
 }
 
-body{
-  font-family: "simplifica", "Raleway", "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: @bodyTextColor;
-  font-size: 16px;
-  margin: 2rem auto;
-
-  max-width: 50em;
-  min-width: 500px;
-
-  padding: 1rem;
-  line-height: 1.4;
-  text-align: justify;
-}
+//v1: ganz nach links, bei <500px kommt sie weg, bis dahin IMMER neben Text -> img was float:left hat also
+//wenn ich de höhe verkleiner gibt es 2 umbrüche, der eine obere sieht besser aus! der wo das beg your pardon auf einer Zeiel ist
 
 h1 {
   padding-left: 0.2rem;
   font-size: 5rem;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   line-height: 1;
 }
@@ -85,17 +118,15 @@ h2 {
 
 p {
   font-size: 1.75rem;
-  /*i {
-    color: @linkColor;
-  }*/
+  word-wrap: break-word;
 }
 
 #contacts {
-  text-align: center;
+  text-align: left;
   margin-bottom: 1rem;
 
   li {
-    font-size: 1.2em;
+    font-size: 2.7vh;
     list-style-type: none;
     display: inline-block;
   }
@@ -109,31 +140,36 @@ p {
   }
 }
 
-div.img {
-  float: left;
-  width: 32%;
-  margin-right: 3%;
-  margin-top: 1.5%;
-}
-
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 @media screen and (min-width: 1000px) {
   #contacts {
     li {
-      font-size: 30px;
+      font-size: 20.5px;
     }
   }
 }
+@media screen and (max-height: 39em) {
 
+  /*
+  body {
+    padding: 1rem;
+  }
+  #content {
+    max-width: 40em;
+    min-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    position: unset;
+    top: unset;
+    left: unset;
+    transform: unset;
+  }
+   */
+
+}
 
 @media screen and (max-width: 500px) {
 
-  body{
+  #content{
     min-width: 15rem;
   }
 
@@ -158,6 +194,10 @@ img {
     padding-right: 1vw;
     clear: both;
     font-size: 1.4rem;
+  }
+
+  h1, h2 {
+    text-align: center;
   }
 
   h1 {

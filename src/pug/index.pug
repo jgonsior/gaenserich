@@ -1,25 +1,27 @@
+- var contacts = [{href: "mailto:julius@gaenseri.ch", icon: "fa-envelope", text: "My E-Mail Address"}, {href: "https://keybase.io/jgonsior/sigs/LfZ5xSVadUUkVYLj9NxNEEX5iz1e1cLUDrBf", icon: "fa-key", text: "My GPG Key on keybase.io"}, {href: "https://linkedin.com/in/julius-gonsior-2790b3141/", icon: "fa-linkedin", text: "Link to my Linkedin profile"}, {href: "https://github.com/jgonsior", icon: "fa-github", text: "Link to my GitHub profile"}, {href: "https://telegram.me/jgonsior", icon: "fa-telegram", text: "My Telegram username"}, {href: "https://twitter.com/juliusgonsior", icon: "fa-twitter", text: "My (not really used) Twitter Account"}, {href: "xmpp://julius@ifsr.de", icon: "fa-comment", text: "My Jabber Address"}, {href: "https://www.last.fm/user/ragadabing", icon: "fa-lastfm", text: "My Last.fm Account"}, {href: "https://www.strava.com/athletes/15823005", icon:"fa-bar-chart", text: "My Strava Account"}, {href:"https://letterboxd.com/Ragadabing/", icon:"fa-film", text: "My Letterboxd Account"}, {href:"https://www.goodreads.com/user/show/70823847-julius-gonsior", icon: "fa-book", text: "My goodreads Account"}, {href:"http://orienteering.org/about-orienteering/", icon: "fa-compass", text: "A link explaining what my favourite sport Orienteering is"}]
+
 doctype html
 html(lang="en-US")
-    head
-        meta(charset="utf-8")
-        title Julius gaenseri.ch
-        link(rel="stylesheet" type="text/css" href="css/main.css")
-        link(rel="icon" type="image/x-icon" href="favicon.ico")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  head
+    meta(charset="utf-8")
+    title Julius gaenseri.ch
+    link(rel="stylesheet" type="text/css" href="css/main.css")
+    link(rel="icon" type="image/x-icon" href="favicon.ico")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
-    body
-      h1 Julius Gonsior
+  body
+    article
+      div#background
+        div#layer 
+          //- just a stupid comment 
 
-    - var contacts = [{href: "mailto:julius@gaenseri.ch", icon: "fa-envelope", text: "My E-Mail Address"}, {href: "https://keybase.io/jgonsior/sigs/LfZ5xSVadUUkVYLj9NxNEEX5iz1e1cLUDrBf", icon: "fa-key", text: "My GPG Key on keybase.io"}, {href: "https://linkedin.com/in/julius-gonsior-2790b3141/", icon: "fa-linkedin", text: "Link to my Linkedin profile"}, {href: "https://github.com/jgonsior", icon: "fa-github", text: "Link to my GitHub profile"}, {href: "https://telegram.me/jgonsior", icon: "fa-telegram", text: "My Telegram username"}, {href: "https://twitter.com/juliusgonsior", icon: "fa-twitter", text: "My (not really used) Twitter Account"}, {href: "xmpp://julius@ifsr.de", icon: "fa-comment", text: "My Jabber Address"}, {href: "https://www.last.fm/user/ragadabing", icon: "fa-lastfm", text: "My Last.fm Account"}, {href: "https://www.strava.com/athletes/15823005", icon:"fa-bar-chart", text: "My Strava Account"}, {href:"https://letterboxd.com/Ragadabing/", icon:"fa-film", text: "My Letterboxd Account"}, {href:"https://www.goodreads.com/user/show/70823847-julius-gonsior", icon: "fa-book", text: "My goodreads Account"}, {href:"http://orienteering.org/about-orienteering/", icon: "fa-compass", text: "A link explaining what my favourite sport Orienteering is"}]
-
+      div#content
+        h1 Julius Gonsior
         ul#contacts
           each contact, index in contacts
-            li #[a.fa-stack.fa-lg(href=contact.href aria-hidden="true") #[i.fa.fa-square.fa-stack-2x] #[i.fa.fa-stack-1x.fa-inverse(class=contact.icon title=contact.text)]] #[span.sr-only #{contact.text}]
+            li #[a.fa-stack.fa-lg(href=contact.href aria-hidden="true") #[i.fa.fa-square.fa-stack-2x] #[i.fa.fa-stack-1x.fa-inverse(class=contact.icon title=contact.text)] #[span.sr-only #{contact.text}]]
 
-        div.img #[img(src="img/goose.jpg" title="A nice drawing of a goose made by the amazing artist u/DyedKitty." alt=" A drawing of a male goose" width="200" height="200")]
 
         div#text
           h2 Beg your pardon, what is a gaenseri.ch?
           p Well, my last name is #[i Gonsior] which is a Germanized form of the polish word #[i Gasior] which translates to #[i Gander], so a male goose. And because little Julius in 2012 thought it would be nice to have a domain where the top-level domain is part of the spoken domain name, he choose a German translation of Gander, Gänserich. But then he discovered that Unicode in top-level domains will probably never happen, so he chose to replace the #[i ä] vowel with #[i ae].
-
-            include tracking.html
