@@ -1,6 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url('https://fonts.googleapis.com/css?family=Raleway:200,400');
-
 @fa_path: "../../node_modules/font-awesome/less";
 @import "@{fa_path}/variables.less";
 @import "@{fa_path}/mixins.less";
@@ -10,18 +7,6 @@
 @import "@{fa_path}/list.less";
 @import "@{fa_path}/stacked.less";
 
-@finaPath: "../fonts/newcicle_fina_macroman/";
-
-@font-face {
-  font-family: 'new_ciclefina';
-  src: url('@{finaPath}New_Cicle_Fina-webfont.eot');
-  src: url('@{finaPath}New_Cicle_Fina-webfont.eot?#iefix') format('embedded-opentype'),
-  url('@{finaPath}New_Cicle_Fina-webfont.woff') format('woff'),
-  url('@{finaPath}New_Cicle_Fina-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 @font-face {
   font-family: 'simplifica';
   src: url('../fonts/simplifica.ttf') format('truetype');
@@ -30,7 +15,6 @@
 
 }
 
-@import url('https://fonts.googleapis.com/css?family=Barlow');
 
 @bodybgColor: #fafafa;
 @bodyTextColor: #555;
@@ -48,7 +32,7 @@ html{
 }
 
 body{
-  font-family: "simplifica", "Raleway", "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "simplifica", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: @bodyTextColor;
   font-size: 16px;
   line-height: 1.4;
