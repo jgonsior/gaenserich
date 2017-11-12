@@ -18,7 +18,7 @@
 
 @bodybgColor: #fafafa;
 @bodyTextColor: #555;
-@linkColor: #941352;//#16a085;
+@linkColor: #941352;
 @iconColor: #540B2F;
 
 * {
@@ -29,49 +29,118 @@
 
 html{
   background-color: @bodybgColor;
+  height: 100%;
 }
 
 body{
+  height: 100%;
   font-family: "simplifica", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: @bodyTextColor;
   font-size: 16px;
   line-height: 1.4;
   text-align: justify;
+}
 
+article {
+  height: 100%;
+}
+
+article {
+  border-bottom: 1px green solid;
   align-items:center;
   display: flex;
   justify-content: center;
-
   position: absolute;
-  top:0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
   padding-right: 2rem;
   padding-left: 2rem;
+
+  section{
+    min-width: 500px;
+    max-width: 60em;
+    display: flex;
+  }
+
+  &#\31 {
+    top: 0;
+  }
+
+  &#\32 {
+    top: 150%;
+    height: 100%;
+  }
+
+  &#\33 {
+    top: 250%;
+    height: 100%;
+  }
+
+  &#\34 {
+    top: 350%;
+    height: 100%;
+  }
+
+  &#\35 {
+    top: 450%;
+    height: 100%;
+  }
+
+  &#\36 {
+    top: 550%;
+    height: 100%;
+  }
+
+  &#\37 {
+    top: 650%;
+    height: 100%;
+  }
+
+  &#\38 {
+    top: 750%;
+    height: 100%;
+  }
+
+  &#\39 {
+    top: 850%;
+    height: 100%;
+  }
 }
 
-article {
-  min-width: 500px;
-  max-width: 60em;
-  display: flex;
-}
+/**
+ideas: die ganz bleibt links fix!
+Seite 1: Julius
+         Gonsior
+         > Software Engineer 
+         > Data Scientist
+         > Orienteerer
 
-#background {
+Seite 2: in einer netten Anordnung (kreis 3x4?) die icons (in größer und als Kreise probieren?)
+Seite 3: beg your pardon, what is a gaenseri.ch?
+Seite 4: GitHub Projekte kurz erklären etc. (Angry Programmers, Photok, WikiData SPARQL Query Logs, )
+Seite 5: Link zu LDR Soundcloud?
+Seite 6: Foto von mir :) -> oder das schon eher?
+
+
+rechts oben dann, aber erst nach dem runter scrollen einblenden, eine ausklappbare Menüleiste anzeigen
+*/
+
+.background {
   float: left;
   background: url("../img/goose.jpg") no-repeat;
   background-size: contain;
   width: 38.2%;
 
-  #layer {
+  .layer {
     background: rgba(250,250,250,0.7);
     width: 100%;
     height: 100%;
   }
 }
 
-#content {
+.content {
   width: 61.8%;
   float: right;
 }
