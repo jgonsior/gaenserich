@@ -67,30 +67,41 @@ html(lang="en-US")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
   body
-    div.background
-      div.layer 
-        //- just a stupid comment 
-
     article#one
-      section.content
-        h1 Julius Gonsior
-        h2 Software Engineer | Data Scientist | Orienteerer
+      section
+        div.background
+          div.layer 
+            //- just a stupid comment 
+
+        div.content
+          h1 Julius Gonsior
+            h2 Software Engineer | Data Scientist | Orienteerer
 
     article#2
-      section.content
-        div.text
-          ul#contacts
-            each contact in contacts
-              li #[a.fa-stack.fa-lg(href=contact.href aria-hidden="true") #[i.fa.fa-square.fa-stack-2x] #[i.fa.fa-stack-1x.fa-inverse(class=contact.icon title=contact.text)] #[span.sr-only #{contact.text}]]
+      section
+        div.background
+          div.layer 
+            //- just a stupid comment 
+
+        div.content
+          div.text
+            ul#contacts
+              each contact in contacts
+                li #[a.fa-stack.fa-lg(href=contact.href aria-hidden="true") #[i.fa.fa-square.fa-stack-2x] #[i.fa.fa-stack-1x.fa-inverse(class=contact.icon title=contact.text)] #[span.sr-only #{contact.text}]]
 
     each project, index in projects
       article(class=project.id id=index+3)
-        section.content
-          div.text
-            h2 #{project.title} 
-              if project.url
-                span #[a.fa.fa-github(href=project.url aria-hidden="true" title=project.urlAlt)] #[span.sr-only #{project.urlAlt}]
+        section
+          div.background
+            div.layer 
+              //- just a stupid comment 
 
-            if project.tags
-              h3 #{project.tags}
-            p !{project.text}
+          div.content
+            div.text
+              h2 #{project.title} 
+                if project.url
+                  span #[a.fa.fa-github(href=project.url aria-hidden="true" title=project.urlAlt)] #[span.sr-only #{project.urlAlt}]
+
+              if project.tags
+                h3 #{project.tags}
+              p !{project.text}
