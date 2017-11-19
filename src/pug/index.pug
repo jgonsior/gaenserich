@@ -67,22 +67,18 @@ html(lang="en-US")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
   body
+    div.background
+      div.layer 
+        //- just a stupid comment 
+
     article#one
       section
-        div.background
-          div.layer 
-            //- just a stupid comment 
-
         div.content
           h1 Julius Gonsior
             h2 Software Engineer | Data Scientist | Orienteerer
 
     article#2
       section
-        div.background
-          div.layer 
-            //- just a stupid comment 
-
         div.content
           div.text
             ul#contacts
@@ -92,10 +88,6 @@ html(lang="en-US")
     each project, index in projects
       article(class=project.id id=index+3)
         section
-          div.background
-            div.layer 
-              //- just a stupid comment 
-
           div.content
             div.text
               h2 #{project.title} 

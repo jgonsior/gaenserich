@@ -60,7 +60,7 @@ article {
   section{
     display: flex;
     min-width: 500px;
-    max-width: 40em;
+    max-width: 60em;
   }
 
   &#\31 {
@@ -127,12 +127,20 @@ rechts oben dann, aber erst nach dem runter scrollen einblenden, eine ausklappba
  */
 
 .background {
-  float: left;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  margin-right: 61.2%;
+
+  width: 38.2%;
+  height: 40%;
+  max-height: 30rem;
+  
   background: url("../img/goose2.png") no-repeat right;
   background-size: contain;
-  width: 38.2%;
-  margin-right: 2rem;
-  min-height: 14rem;
 
   .layer {
     background: rgba(250,250,250,0.85);
@@ -142,8 +150,8 @@ rechts oben dann, aber erst nach dem runter scrollen einblenden, eine ausklappba
 }
 
 .content {
-  width: 61.8%;
-  float: right;
+  padding-left: 1rem;
+  margin-left: 38.2%;
   display: flex;
   align-items: center;
 }
@@ -157,7 +165,7 @@ rechts oben dann, aber erst nach dem runter scrollen einblenden, eine ausklappba
 }
 
 h1 {
-  padding-left: 0.2rem;
+  Padding-left: 0.2rem;
   font-size: 5rem;
   text-align: left;
   font-weight: bold;
@@ -172,6 +180,7 @@ h2 {
 
 p {
   word-wrap: break-word;
+  font-size: 1.75rem;
 }
 
 #contacts {
