@@ -61,7 +61,7 @@ article {
     display: flex;
     min-width: 500px;
     width: 100%;
-    max-width: 35em;
+    max-width: 40em;
   }
 
   &#a1 {
@@ -95,14 +95,16 @@ article {
     #contacts {
       text-align: left;
       margin-bottom: 1rem;
-      max-width: 27vw;
+      max-width: 34vw;
 
       li {
-        font-size: 3vw;
+        margin: 0.1vw;
+        font-size: 4vw;
         list-style-type: none;
         display: inline-block;
         a {
-          text-shadow: 2px 2px 3px @bodyTextColor;
+          color: #444;
+          text-shadow: 2px 2px 3px #444;
         }
       }
     }
@@ -144,21 +146,7 @@ article {
   }
 }
 
-/**
-ideas: die ganz bleibt links fix!
-Seite 1: Julius
-Gonsior
-> Software Engineer 
-> Data Scientist
-> Orienteerer
-
-Seite 2: in einer netten Anordnung (kreis 3x4?) die icons (in größer und als Kreise probieren?)
-Seite 3: beg your pardon, what is a gaenseri.ch?
-Seite 4: GitHub Projekte kurz erklären etc. (Angry Programmers, Photok, WikiData SPARQL Query Logs, )
-Seite 5: Link zu LDR Soundcloud?
-Seite 6: Foto von mir :) -> oder das schon eher?
-
-
+/*
 rechts oben dann, aber erst nach dem runter scrollen einblenden, eine ausklappbare Menüleiste anzeigen
  */
 
@@ -225,7 +213,7 @@ a.fa-stack {
   text-decoration: none;
 
   &:hover {
-    color: @linkHoverColor;
+    color: @linkHoverColor !important;
   }
 }
 
@@ -239,6 +227,7 @@ a {
 }
 
 h2 a.fa {
+  font-size: 2.4rem;
   color: @bodyTextColor;
   text-decoration: none;
 
@@ -249,11 +238,11 @@ h2 a.fa {
 
 @media screen and (min-width: 1000px) {
   #contacts {
-    max-width: 269.717px !important;
+    max-width: 339.65px !important;
   }
   #contacts {
     li {
-      font-size: 29.97px !important;
+      font-size: 39.97px !important;
     }
   }
 }

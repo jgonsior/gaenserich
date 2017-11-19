@@ -1,21 +1,11 @@
-function addFixedOnScroll(limit){
-    console.log("bin hier: " + $(window).scrollTop());
-    if ($(window).scrollTop() >= limit) {
-       $('#a2 section').addClass('fixed');
-    }
-    else {
-       $('#a2 section').removeClass('fixed');
-    }
-  };
+window.sr = ScrollReveal( {
+  reset: true
+}
+);
 
-$(document).ready(function(){
-  var originalPosition = $('#a2 section').offset().top;
-  console.log(originalPosition);
+sr.reveal('.background');
 
-  addFixedOnScroll(originalPosition);
+sr.reveal('section');
+sr.reveal('#a1 h2', 50);
 
-  $(window).scroll(function() {
-    addFixedOnScroll(originalPosition);
-  });
-
-});
+sr.reveal('#contacts li', 50);
