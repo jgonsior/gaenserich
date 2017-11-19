@@ -21,7 +21,7 @@
 @linkColor: #07a;
 @iconColor: #540B2F;
 
-html{
+html {
   background-color: @bodybgColor;
   height: 100%;
   box-sizing: border-box;
@@ -33,7 +33,7 @@ html{
   box-sizing: inherit;
 }
 
-body{
+body {
   height: 100%;
   font-family: "simplifica", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: @bodyTextColor;
@@ -44,7 +44,6 @@ body{
 
 
 article {
-  height: 100%;
   border-bottom: 1px green solid;
   align-items: center;
   justify-content: center;
@@ -63,46 +62,73 @@ article {
     max-width: 60em;
   }
 
-  &#\31 {
+  &#a1 {
     top: 0;
+
+    h1 {
+      font-size: 5rem;
+      text-align: left;
+      font-weight: bold;
+      line-height: 1;
+    }
+
+    h2 {
+      padding-left: 1.0rem;
+      font-weight: normal;
+
+      span {
+        font-weight: bold;
+      }
+    }
   }
 
-  &#\32 {
+  &#a2 {
     top: 150%;
     height: 100%;
+
+    #contacts {
+      text-align: left;
+      margin-bottom: 1rem;
+
+      li {
+        font-size: 2.34vw;
+        list-style-type: none;
+        display: inline-block;
+      }
+    }
   }
 
-  &#\33 {
+  &#a3 {
     top: 250%;
     height: 100%;
   }
 
-  &#\34 {
+  &#a4 {
     top: 350%;
     height: 100%;
   }
 
-  &#\35 {
+  &#a5 {
     top: 450%;
     height: 100%;
   }
 
-  &#\36 {
+  &#a6 {
     top: 550%;
     height: 100%;
   }
 
-  &#\37 {
+  &#a7 {
     top: 650%;
     height: 100%;
   }
 
-  &#\38 {
+  &#a8 {
     top: 750%;
     height: 100%;
   }
 
-  &#\39 {
+  &#a9 {
     top: 850%;
     height: 100%;
   }
@@ -138,12 +164,12 @@ rechts oben dann, aber erst nach dem runter scrollen einblenden, eine ausklappba
   width: 38.2%;
   height: 40%;
   max-height: 30rem;
-  
+
   background: url("../img/goose2.png") no-repeat right;
   background-size: contain;
 
   .layer {
-    background: rgba(250,250,250,0.85);
+    background: rgba(250,250,250,0.90);
     width: 100%;
     height: 100%;
   }
@@ -152,8 +178,6 @@ rechts oben dann, aber erst nach dem runter scrollen einblenden, eine ausklappba
 .content {
   padding-left: 1rem;
   margin-left: 38.2%;
-  display: flex;
-  align-items: center;
 }
 
 ::-moz-selection {
@@ -164,34 +188,15 @@ rechts oben dann, aber erst nach dem runter scrollen einblenden, eine ausklappba
   color: @linkColor;
 }
 
-h1 {
-  Padding-left: 0.2rem;
-  font-size: 5rem;
-  text-align: left;
-  font-weight: bold;
-  line-height: 1;
-}
-
 h2 {
-  padding-top: 1%;
   font-size: 2rem;
   text-align: left;
 }
 
 p {
+  padding-top: 0.8rem;
   word-wrap: break-word;
   font-size: 1.75rem;
-}
-
-#contacts {
-  text-align: left;
-  margin-bottom: 1rem;
-
-  li {
-    font-size: 2.34vw;
-    list-style-type: none;
-    display: inline-block;
-  }
 }
 
 a.fa-stack {

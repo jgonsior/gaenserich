@@ -71,13 +71,15 @@ html(lang="en-US")
       div.layer 
         //- just a stupid comment 
 
-    article#one
+    article#a1
       section
         div.content
           h1 Julius Gonsior
-            h2 Software Engineer | Data Scientist | Orienteerer
+          h2 #[span >] Software Engineer
+          h2 #[span >] Data Scientist
+          h2 #[span >] Orienteerer
 
-    article#2
+    article#a2
       section
         div.content
           div.text
@@ -86,7 +88,7 @@ html(lang="en-US")
                 li #[a.fa-stack.fa-lg(href=contact.href aria-hidden="true") #[i.fa.fa-square.fa-stack-2x] #[i.fa.fa-stack-1x.fa-inverse(class=contact.icon title=contact.text)] #[span.sr-only #{contact.text}]]
 
     each project, index in projects
-      article(class=project.id id=index+3)
+      article(class=project.id id="a"+(index+3))
         section
           div.content
             div.text
