@@ -7,6 +7,8 @@
 @import "@{fa_path}/list.less";
 @import "@{fa_path}/stacked.less";
 
+@import url('https://fonts.googleapis.com/css?family=Roboto|Open+Sans|Merriweather');
+
 @font-face {
   font-family: 'simplifica';
   src: url('../fonts/simplifica.ttf') format('truetype');
@@ -35,7 +37,7 @@ html {
 
 body {
   height: 100%;
-  font-family: "simplifica", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: @bodyTextColor;
   font-size: 16px;
   line-height: 1.4;
@@ -64,7 +66,8 @@ article {
 
   &#a1 {
     top: 0;
-
+    font-family: "simplifica", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
     h1 {
       font-size: 5rem;
       text-align: left;
@@ -75,6 +78,7 @@ article {
     h2 {
       padding-left: 1.0rem;
       font-weight: normal;
+      font-size: 2.25rem;
 
       span {
         font-weight: bold;
@@ -189,14 +193,19 @@ rechts oben dann, aber erst nach dem runter scrollen einblenden, eine ausklappba
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: left;
 }
 
+h3 {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #777;
+}
+
 p {
-  padding-top: 0.8rem;
   word-wrap: break-word;
-  font-size: 1.75rem;
+  font-size: 1.15rem;
 }
 
 a.fa-stack {
@@ -213,7 +222,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    text-decoration: underline;
+    color: @linkHoverColor;
   } 
 }
 
