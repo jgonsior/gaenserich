@@ -7,7 +7,7 @@
 @import "@{fa_path}/list.less";
 @import "@{fa_path}/stacked.less";
 
-@import url('https://fonts.googleapis.com/css?family=Roboto|Open+Sans|Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 @font-face {
   font-family: 'simplifica';
@@ -46,11 +46,9 @@ body {
 
 
 article {
-  border-bottom: 1px green solid;
   align-items: center;
   justify-content: center;
   display: flex;
-  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
@@ -66,6 +64,7 @@ article {
 
   &#a1 {
     top: 0;
+    height: 100%;
     font-family: "simplifica", "Helvetica Neue", Helvetica, Arial, sans-serif;
     
     h1 {
@@ -93,9 +92,10 @@ article {
     #contacts {
       text-align: left;
       margin-bottom: 1rem;
+      max-width: 27vw;
 
       li {
-        font-size: 2.34vw;
+        font-size: 3vw;
         list-style-type: none;
         display: inline-block;
       }
@@ -235,14 +235,17 @@ h2 a.fa {
   }
 }
 
-
-/*@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
+  #contacts {
+    max-width: 269.717px !important;
+  }
 #contacts {
   li {
-    font-size: 23.365px;
+    font-size: 29.97px !important;
   }
 }
 }
+
 /*@media screen and (max-height: 510px) {
 body {
   padding: 1rem;
