@@ -32,7 +32,7 @@
       tags: "Reinforcement Learning, Java, Computer Vision",
       url: "https://github.com/jgonsior/AngryProgrammers",
       urlAlt: "Link to the GitHub AngryProgrammers Repository",
-      text: "Together with my friend <a href='https://www.linkedin.com/in/richard-kwasnicki-9131a6122/'>Richard</a> we tried to participate in the <a href='https://aibirds.org/'>AIBirds</a> competition. Our plan was to use Reinforcement Learning to train our agent. Unfortunately we discovered, instead of solving the game properly, that the implementation of the game, with which we've been provided by the competition, wasn't suited for any type of Machine Learning. It took us around one week to play only 3.000 levels, even after months of fine-tuning and optimization. For proper Q-Learning you need way more training iterations, so after some month we decided that we should reimplement the game instead - and that we don't have the time for that, so we abandand this project.",
+      text: "Together with my friend <a href='https://www.linkedin.com/in/richard-kwasnicki-9131a6122/'>Richard</a> we tried to participate in the <a href='https://aibirds.org/'>AIBirds</a> competition. Our plan was to use Reinforcement Learning to train our agent. Unfortunately we discovered, instead of solving the game properly, that the implementation of the game, with which we've been provided by the competition, wasn't suited for any type of Machine Learning. It took us around one week to play only 3.000 levels, even after months of fine-tuning and optimization. For proper Q-Learning you need way more training iterations, so after some months we decided that we should reimplement the game instead - and that we don't have the time for that, so we abandand this project.",
     },
     {
       title: "PhotoK",
@@ -53,7 +53,7 @@
     {
       title: "Music",
       id: "music",
-      text: "In my free time I play the bass guitar in multiple bands, the most popular one were probably the unfortunately not anymore existing <a href=\"https://www.facebook.com/ldracoons\">Last Dangerous Racoons</a>, you can listen to our music <a href=\"https://soundcloud.com/lastdangerousracoons\">here on Soundcloud</a>."
+      text: "In my free time I play the bass guitar in multiple bands, the most popular one were probably the not anymore existing <a href=\"https://www.facebook.com/ldracoons\">Last Dangerous Racoons</a>, you can listen to our music <a href=\"https://soundcloud.com/lastdangerousracoons\">here</a> on Soundcloud."
     }
   ]
 
@@ -67,40 +67,30 @@ html(lang="en-US")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
   body
-    article#one
-      section
-        div.background
-          div.layer 
-            //- just a stupid comment 
+    div.background
+      div.layer 
+        //- just a stupid comment 
 
-        div.content
-          h1 Julius Gonsior
-          h2 Software Engineer | Data Scientist | Orienteerer
+    article#one
+      section.content
+        h1 Julius Gonsior
+        h2 Software Engineer | Data Scientist | Orienteerer
 
     article#2
-      section
-        div.background
-          div.layer 
-            //- just a stupid comment 
-
-        div.content
-          div.text
-            ul#contacts
-              each contact in contacts
-                li #[a.fa-stack.fa-lg(href=contact.href aria-hidden="true") #[i.fa.fa-square.fa-stack-2x] #[i.fa.fa-stack-1x.fa-inverse(class=contact.icon title=contact.text)] #[span.sr-only #{contact.text}]]
+      section.content
+        div.text
+          ul#contacts
+            each contact in contacts
+              li #[a.fa-stack.fa-lg(href=contact.href aria-hidden="true") #[i.fa.fa-square.fa-stack-2x] #[i.fa.fa-stack-1x.fa-inverse(class=contact.icon title=contact.text)] #[span.sr-only #{contact.text}]]
 
     each project, index in projects
       article(class=project.id id=index+3)
-        section
-          div.background
-            div.layer
-              //- just a stupid comment
+        section.content
+          div.text
+            h2 #{project.title} 
+              if project.url
+                span #[a.fa.fa-github(href=project.url aria-hidden="true" title=project.urlAlt)] #[span.sr-only #{project.urlAlt}]
 
-          div.content
-            div.text
-              h2 #{project.title} 
-                if project.url
-                  span #[a.fa-stack.fa-lg(href=project.url aria-hidden="true") #[i.fa.fa-square.fa-stack-2x] #[i.fa.fa-stack-1x.fa-inverse(class=fa-github title=project.urlAlt)] #[span.sr-only #{project.urlAlt}]]  
-              if project.tags
-                h3 #{project.tags}
-              p !{project.text}
+            if project.tags
+              h3 #{project.tags}
+            p !{project.text}

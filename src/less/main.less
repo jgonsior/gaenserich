@@ -12,13 +12,13 @@
   src: url('../fonts/simplifica.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-
 }
 
 
 @bodybgColor: #fafafa;
 @bodyTextColor: #555;
-@linkColor: #941352;
+@linkHoverColor: #941352;
+@linkColor: #07a;
 @iconColor: #540B2F;
 
 * {
@@ -112,10 +112,10 @@ article {
 /**
 ideas: die ganz bleibt links fix!
 Seite 1: Julius
-         Gonsior
-         > Software Engineer 
-         > Data Scientist
-         > Orienteerer
+Gonsior
+> Software Engineer 
+> Data Scientist
+> Orienteerer
 
 Seite 2: in einer netten Anordnung (kreis 3x4?) die icons (in größer und als Kreise probieren?)
 Seite 3: beg your pardon, what is a gaenseri.ch?
@@ -125,10 +125,13 @@ Seite 6: Foto von mir :) -> oder das schon eher?
 
 
 rechts oben dann, aber erst nach dem runter scrollen einblenden, eine ausklappbare Menüleiste anzeigen
-*/
+ */
 
 .background {
-  float: left;
+  position: fixed;
+  top: 10%;
+  left:00%;
+  bottom: 10%;
   background: url("../img/goose.jpg") no-repeat;
   background-size: contain;
   width: 38.2%;
@@ -140,9 +143,8 @@ rechts oben dann, aber erst nach dem runter scrollen einblenden, eine ausklappba
   }
 }
 
-.content {
-  width: 61.8%;
-  float: right;
+article {
+  padding-left: 38.2%;
 }
 
 ::-moz-selection {
@@ -181,13 +183,32 @@ p {
     list-style-type: none;
     display: inline-block;
   }
-  a {
-    color: @bodyTextColor;
-    text-decoration: none;
+}
 
-    &:hover {
-      color:#941352;
-    }
+a.fa-stack {
+  color: @bodyTextColor;
+  text-decoration: none;
+
+  &:hover {
+    color: @linkHoverColor;
+  }
+}
+
+a {
+  color: @linkColor;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  } 
+}
+
+h2 a.fa {
+  color: @bodyTextColor;
+  text-decoration: none;
+
+  &:hover {
+    color: @linkHoverColor;
   }
 }
 
