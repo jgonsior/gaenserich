@@ -47,19 +47,21 @@ body {
 
 article {
   align-items: center;
-  justify-content: center;
+  //justify-content: center;
   display: flex;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
+  margin-left: 41.2%;
   padding-right: 2rem;
   padding-left: 2rem;
 
   section{
     display: flex;
     min-width: 500px;
-    max-width: 60em;
+    width: 100%;
+    max-width: 35em;
   }
 
   &#a1 {
@@ -72,6 +74,7 @@ article {
       text-align: left;
       font-weight: bold;
       line-height: 1;
+      text-shadow: 1px 1px 1px @bodyTextColor;
     }
 
     h2 {
@@ -98,6 +101,9 @@ article {
         font-size: 3vw;
         list-style-type: none;
         display: inline-block;
+        a {
+          text-shadow: 2px 2px 3px @bodyTextColor;
+        }
       }
     }
   }
@@ -157,15 +163,14 @@ rechts oben dann, aber erst nach dem runter scrollen einblenden, eine ausklappba
  */
 
 .background {
+  z-index: 11;
   position: fixed;
   top: 0;
   bottom: 0;
   margin-top: auto;
   margin-bottom: auto;
 
-  margin-right: 61.2%;
-
-  width: 38.2%;
+  width: 37.2%;
   height: 40%;
   max-height: 30rem;
 
@@ -173,15 +178,22 @@ rechts oben dann, aber erst nach dem runter scrollen einblenden, eine ausklappba
   background-size: contain;
 
   .layer {
+    display: none;
     background: rgba(250,250,250,0.90);
     width: 100%;
     height: 100%;
   }
 }
 
-.content {
-  padding-left: 1rem;
-  margin-left: 38.2%;
+#bar {
+  width: 39.2%;
+  height: 110%;
+  background: @bodyTextColor;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 10px -5px 5px @bodyTextColor;
 }
 
 ::-moz-selection {
@@ -239,11 +251,11 @@ h2 a.fa {
   #contacts {
     max-width: 269.717px !important;
   }
-#contacts {
-  li {
-    font-size: 29.97px !important;
+  #contacts {
+    li {
+      font-size: 29.97px !important;
+    }
   }
-}
 }
 
 /*@media screen and (max-height: 510px) {
