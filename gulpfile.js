@@ -56,9 +56,10 @@ gulp.task('fonts', function() {
 })
 
 gulp.task('css', () => {
-  return gulp.src('src/less/*.less')
+  return gulp.src(['node_modules/normalize.css/normalize.css', 'src/less/*.less'])
+    .pipe(concat('style.css'))
     .pipe(less())
-    .pipe(cssnano())
+    .pipe(cssnano({preset: 'advanced'}))
     .pipe(gulp.dest('dist/css'));
 });
 
