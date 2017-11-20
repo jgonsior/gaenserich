@@ -6,6 +6,8 @@ var cssnano = require('gulp-cssnano');
 var htmlMinifier = require('gulp-html-minifier');
 var del = require('del');
 var browserSync = require('browser-sync').create();
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
 
 gulp.task('views', () => {
   return gulp.src('src/pug/*.pug')
@@ -35,6 +37,14 @@ gulp.task('copy', () => {
     .pipe(gulp.dest('dist/'));
 });
 
+gulp.task('scripts', function() {
+  return gulp.src(['node_modules/scrollreveal/dist/scrollreveal.min.js', 'src/js/main.js'])
+    .pipe(concat('script.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/js/'));
+
+})
+
 gulp.task('copy-watch', ['copy'], function(done) {
   browserSync.reload();
   done();
@@ -60,7 +70,7 @@ gulp.task('watch', () => {
   return gulp.watch('src/**/*', ['views', 'less', 'copy']);
 });
 
-gulp.task('build', ['views', 'fonts', 'css', 'copy']);
+gulp.task('build', ['views', 'fonts', 'scripts', 'css', 'copy']);
 
 gulp.task('cleanandbuild', ['clean', 'build']);
 
