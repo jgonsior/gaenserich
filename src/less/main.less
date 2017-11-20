@@ -123,8 +123,9 @@ article {
   bottom: 0;
   margin-top: auto;
   margin-bottom: auto;
+  left: 2vw;
 
-  width: 37.2vw;
+  width: 35.2vw;
   height: 40%;
   max-height: 30rem;
 
@@ -232,28 +233,45 @@ h2 a.fa {
   }
 }
 
+// landscape mode phones
+@media screen and (max-height: 500px) {
+  #bar {
+    width: 20vw;
+  }
+
+  .background {
+    width: 18vw;
+  }
+
+  article {
+    margin-left: 22vw;
+  }
+}
+
+
 @media screen and (max-width: 500px) {
   #bar {
     position: fixed;
     width: 110%;
-    height: 20vh;
+    height: 6rem;
     box-shadow: -5px 5px 5px #333;
   }
 
   .background {
-    height: 15vh;
+    height: 4rem;
     position: fixed;
-    top: 2.5vh;
-    right: 2.5vh;
+    top: 1rem;
+    right: 1rem;
+    left: auto;
     margin-top: 0;
   }
 
   article#a1 h1 {
     position: fixed;
-    top: 2.5vh;
-    left: 2.5vh;
+    top: 1rem;
+    left: 1rem;
     z-index: 20;
-    font-size: 8vh;
+    font-size: 2.5rem;
     width: 7rem;
     color: @bodybgColor;
   }
@@ -286,10 +304,6 @@ h2 a.fa {
   }
   h2 {
     font-size: 1.25rem;
-    position: sticky;
-    top: 20vh;
-    padding-top: 2vh;
-    background: @bodybgColor;
 
     a.fa {
       font-size: inherit;
