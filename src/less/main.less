@@ -60,9 +60,11 @@ article {
   left: 0;
   right: 0;
   margin: auto;
-  margin-left: 41.2%;
+  margin-left: 41.2vw;
   padding-right: 2rem;
   padding-left: 2rem;
+
+  min-height: 100%;
 
   section{
     display: flex;
@@ -73,9 +75,8 @@ article {
 
   &#a1 {
     top: 0;
-    height: 100%;
     font-family: "simplifica", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    
+
     h1 {
       font-size: 5rem;
       text-align: left;
@@ -96,9 +97,6 @@ article {
   }
 
   &#a2 {
-    top: 150%;
-    height: 100%;
-
     #contacts {
       text-align: left;
       margin-bottom: 1rem;
@@ -116,46 +114,7 @@ article {
       }
     }
   }
-
-  &#a3 {
-    top: 250%;
-    height: 100%;
-  }
-
-  &#a4 {
-    top: 350%;
-    height: 100%;
-  }
-
-  &#a5 {
-    top: 450%;
-    height: 100%;
-  }
-
-  &#a6 {
-    top: 550%;
-    height: 100%;
-  }
-
-  &#a7 {
-    top: 650%;
-    height: 100%;
-  }
-
-  &#a8 {
-    top: 750%;
-    height: 100%;
-  }
-
-  &#a9 {
-    top: 850%;
-    height: 100%;
-  }
 }
-
-/*
-rechts oben dann, aber erst nach dem runter scrollen einblenden, eine ausklappbare Menüleiste anzeigen
- */
 
 .background {
   z-index: 11;
@@ -165,7 +124,7 @@ rechts oben dann, aber erst nach dem runter scrollen einblenden, eine ausklappba
   margin-top: auto;
   margin-bottom: auto;
 
-  width: 37.2%;
+  width: 37.2vw;
   height: 40%;
   max-height: 30rem;
 
@@ -181,7 +140,7 @@ rechts oben dann, aber erst nach dem runter scrollen einblenden, eine ausklappba
 }
 
 #bar {
-  width: 39.2%;
+  width: 39.2vw;
   height: 110%;
   background: #333;
   position: fixed;
@@ -213,6 +172,7 @@ h3 {
 p {
   word-wrap: break-word;
   font-size: 1.5rem;
+  text-align: left;
 }
 
 a.fa-stack {
@@ -254,73 +214,98 @@ h2 a.fa {
   }
 }
 
-/*@media screen and (max-height: 510px) {
-body {
-  padding: 1rem;
-  display: block;
-}
-article {
-  margin-left: auto;
-  margin-right: auto;
-}
-}
+@media  screen and (max-width: 1000px) {
+  article section {
+    min-width: 0;
+  }
 
-/*@media  screen and (max-width: 700px) {
-body {
-  padding-top: 1.5rem;
-  margin-bottom: 2rem;
-  display: block;
-}
-#background {
-  display: none;
-}
-#content {
-  width: auto;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  clear: both;
-}
-article {
-  min-width: auto;
-}
-#contacts {
-  li {
-    font-size: 3.5vw;
+  p {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
   }
 }
-}
 
-/*@media screen and (max-width: 500px) {
-#content{
-  min-width: 13rem;
-}
-
-article {
-  min-width: auto;
-}
-
-p {
-  font-size: 1.4rem;
-}
-
-h1 {
-  font-size: 2.9rem;
-  line-height: 1;
-  padding: 0;
-}
-
-h2 {
-  font-size: 1.8rem;
-}
-
-#contacts {
-  max-width: 13rem;
-
-  li{
-    font-size: 1.08rem;
+@media screen and (max-width: 500px) {
+  #bar {
+    position: fixed;
+    width: 110%;
+    height: 20vh;
+    box-shadow: -5px 5px 5px #333;
   }
+
+  .background {
+    height: 15vh;
+    position: fixed;
+    top: 2.5vh;
+    right: 2.5vh;
+    margin-top: 0;
+  }
+
+  article#a1 h1 {
+    position: fixed;
+    top: 2.5vh;
+    left: 2.5vh;
+    z-index: 20;
+    font-size: 8vh;
+    width: 7rem;
+    color: @bodybgColor;
+  }
+
+  article {
+    position: static;
+    margin-left: 0;
+
+    &#a1 {
+      margin-top: 15vw;
+    }
+
+    &#a2 {
+      min-height: 50vmin;
+
+      #contacts {
+        width: 60vmin;
+        max-width: none;
+
+        li {
+          font-size: 7vmin;
+        }
+      }
+    }
+    section {
+      max-width: none;
+      min-width: 0;
+    }
+
+  }
+  h2 {
+    font-size: 1.25rem;
+    position: sticky;
+    top: 20vh;
+    padding-top: 2vh;
+    background: @bodybgColor;
+
+    a.fa {
+      font-size: inherit;
+    }
+  }
+
+  h3 {
+    font-size: 0.7rem;
+  }
+
+  p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
 }
-}*/
 
 .sr-only {
   position: absolute;
