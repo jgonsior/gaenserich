@@ -147,186 +147,203 @@ article {
   }
 }
 
+
+article section span.topOffset {
+	display: block; 
+	margin-top: -50%; 
+	padding-bottom: 50%;
+}
+
 ::-moz-selection {
-  color: @linkColor;
+	color: @linkColor;
 }
 
 ::selection {
-  color: @linkColor;
+	color: @linkColor;
 }
 
 h2 {
-  font-size: 2rem;
-  text-align: left;
+	font-size: 2rem;
+	text-align: left;
 }
 
 h3 {
-  font-size: 1.25rem;
-  font-weight: normal;
-  color: #777;
+	font-size: 1.25rem;
+	font-weight: normal;
+	color: #777;
 }
 
 p {
-  word-wrap: break-word;
-  font-size: 1.5rem;
-  text-align: justify;
+	word-wrap: break-word;
+	font-size: 1.5rem;
+	text-align: justify;
 }
 
 a.fa-stack {
-  color: @bodyTextColor;
-  text-decoration: none;
+	color: @bodyTextColor;
+	text-decoration: none;
 
-  &:hover {
-    color: @linkHoverColor !important;
-  }
+	&:hover {
+		color: @linkHoverColor !important;
+	}
 }
 
 a {
-  color: @linkColor;
-  text-decoration: none;
+	color: @linkColor;
+	text-decoration: none;
 
-  &:hover {
-    color: @linkHoverColor;
-  } 
+	&:hover {
+		color: @linkHoverColor;
+	} 
 }
 
 h2 a.fa {
-  font-size: 2.4rem;
-  color: @bodyTextColor;
-  text-decoration: none;
+	font-size: 2.4rem;
+	color: @bodyTextColor;
+	text-decoration: none;
 
-  &:hover {
-    color: @linkHoverColor;
-  }
+	&:hover {
+		color: @linkHoverColor;
+	}
 }
 
 @media screen and (min-width: 1000px) {
-  #contacts {
-    max-width: 339.65px !important;
-  }
-  #contacts {
-    li {
-      font-size: 39.97px !important;
-    }
-  }
+	#contacts {
+		max-width: 339.65px !important;
+	}
+	#contacts {
+		li {
+			font-size: 39.97px !important;
+		}
+	}
 }
 
 @media  screen and (max-width: 1000px) {
-  article section {
-    min-width: 0;
-  }
+	article section {
+		min-width: 0;
+	}
 
-  p {
-    font-size: 1.25rem;
-  }
+	p {
+		font-size: 1.25rem;
+	}
 
-  h3 {
-    font-size: 1rem;
-  }
+	h3 {
+		font-size: 1rem;
+	}
 
-  h2 {
-    font-size: 1.5rem;
-  }
+	h2 {
+		font-size: 1.5rem;
+	}
 }
 
 // landscape mode phones
 @media screen and (max-height: 500px) {
-  #bar {
-    width: 20vw;
-  }
+	#bar {
+		width: 20vw;
+	}
 
-  #background {
-    width: 18vw;
-  }
+	#background {
+		width: 18vw;
+	}
 
-  article {
-    margin-left: 22vw;
-  }
+	article {
+		margin-left: 22vw;
+	}
 }
 
 
 @media screen and (max-width: 500px) {
-  body {
-    padding-top: 6.5rem;
-  }
+	body {
+		padding-top: 6.5rem;
+	}
 
-  #bar {
-    position: fixed;
-    width: 100%;
-    height: 6rem;
-    box-shadow: 0px 0px 5px 5px #333;
-  }
+	article section {
+		display: block;
+	}
 
-  #bar #goose {
-    height: 70%;
-    margin-right: 2rem;
-  }
+	article section span.topOffset {
+		display: block; 
+		margin-top: -6.5rem; 
+		padding-bottom: 6.5rem;
+	}
 
-  article#a1 h1 {
-    position: fixed;
-    top: 0.8rem;
-    left: 2rem;
-    margin-top: 0;
-    z-index: 20;
-    font-size: 2.5rem;
-    width: 7rem;
-    color: @bodybgColor;
-  }
+	#bar {
+		position: fixed;
+		width: 100%;
+		height: 6rem;
+		box-shadow: 0px 0px 5px 5px #333;
+	}
 
-  article {
-    position: static;
-    margin-left: 0;
-    min-height: 0;
-    margin-bottom: 10rem;
+	#bar #goose {
+		height: 70%;
+		margin-right: 2rem;
+	}
 
-    &#a1 {
-      margin-top: 15rem;
-      margin-bottom: 15rem;
-    }
+	article#a1 h1 {
+		position: fixed;
+		top: 0.8rem;
+		left: 2rem;
+		margin-top: 0;
+		z-index: 20;
+		font-size: 2.5rem;
+		width: 7rem;
+		color: @bodybgColor;
+	}
 
-    &#a2 {
-      min-height: 30rem;
+	article {
+		position: static;
+		margin-left: 0;
+		min-height: 0;
+		margin-bottom: 10rem;
 
-      #contacts {
-        width: 60vmin;
-        max-width: none;
+		&#a1 {
+			margin-top: 15rem;
+			margin-bottom: 15rem;
+		}
 
-        li {
-          font-size: 7vmin;
-        }
-      }
-    }
-    section {
-      max-width: none;
-      min-width: 0;
-    }
+		&#a2 {
+			min-height: 30rem;
 
-  }
-  h2 {
-    font-size: 1.25rem;
+			#contacts {
+				width: 60vmin;
+				max-width: none;
 
-    a.fa {
-      font-size: inherit;
-    }
-  }
+				li {
+					font-size: 7vmin;
+				}
+			}
+		}
+		section {
+			max-width: none;
+			min-width: 0;
+		}
 
-  h3 {
-    font-size: 0.7rem;
-  }
+	}
+	h2 {
+		font-size: 1.25rem;
 
-  p {
-    font-size: 1rem;
-  }
+		a.fa {
+			font-size: inherit;
+		}
+	}
+
+	h3 {
+		font-size: 0.7rem;
+	}
+
+	p {
+		font-size: 1rem;
+	}
 
 }
 
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  border: 0;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
 }
