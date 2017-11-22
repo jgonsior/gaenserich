@@ -124,30 +124,6 @@ article {
   }
 }
 
-.background {
-  z-index: 11;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  margin-top: auto;
-  margin-bottom: auto;
-  left: 2vw;
-
-  width: 25vw;
-  height: 40%;
-  max-height: 30rem;
-
-  background: url("../img/goose2t.png") no-repeat right;
-  background-size: contain;
-
-  .layer {
-    display: none;
-    background: rgba(250,250,250,0.90);
-    width: 100%;
-    height: 100%;
-  }
-}
-
 #bar {
   width: 30vw;
   height: 110%;
@@ -157,6 +133,18 @@ article {
   left: 0;
   z-index: 10;
   box-shadow: 10px -5px 5px #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  #goose {
+    margin-left: 2rem;
+    margin-right: 1rem;
+    height: 40%;
+    max-height: 30rem;
+    background: url("../img/goose2t.png") no-repeat right;
+    background-size: contain;
+  }
 }
 
 ::-moz-selection {
@@ -247,7 +235,7 @@ h2 a.fa {
     width: 20vw;
   }
 
-  .background {
+  #background {
     width: 18vw;
   }
 
@@ -258,27 +246,27 @@ h2 a.fa {
 
 
 @media screen and (max-width: 500px) {
-  #bar {
-    position: fixed;
-    width: 110%;
-    height: 6rem;
-    box-shadow: -5px 5px 5px #333;
+  body {
+    padding-top: 6.5rem;
   }
 
-  .background {
-    height: 4rem;
-    width: 100%;
+  #bar {
     position: fixed;
-    top: 1rem;
-    right: 1rem;
-    left: auto;
-    margin-top: 0;
+    width: 100%;
+    height: 6rem;
+    box-shadow: 0px 0px 5px 5px #333;
+  }
+
+  #bar #goose {
+    height: 70%;
+    margin-right: 2rem;
   }
 
   article#a1 h1 {
     position: fixed;
-    top: 1rem;
-    left: 1rem;
+    top: 0.8rem;
+    left: 2rem;
+    margin-top: 0;
     z-index: 20;
     font-size: 2.5rem;
     width: 7rem;
