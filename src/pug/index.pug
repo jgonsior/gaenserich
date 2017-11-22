@@ -23,7 +23,7 @@
     },
     {
       title: "Coding Projects",
-      id: "Projects",
+      id: "projects",
       text: "I'm studying computer science at the <i>Technische Universität Dresden</i> in Germany. Three selected publically available coding projects I was involved in during the last years follow:"
     },
     {
@@ -54,6 +54,11 @@
       title: "Music",
       id: "music",
       text: "In my free time I play the bass guitar in multiple bands, the most popular one were probably the not anymore existing <a href=\"https://www.facebook.com/ldracoons\">Last Dangerous Racoons</a>, you can listen to our music <a href=\"https://soundcloud.com/lastdangerousracoons\">here</a> on Soundcloud."
+    },
+    {
+      title: "Orienteering",
+      id: "ol",
+      text: "When I was around the age of 12 I was getting to become quite chubby, so my parents advised me to do some sports. Good luck a good friend of mine just started this totally awesome and adventurous sounding sport called <i>Orienteering</i> and dragged me along to the training. Bascially you've got a map and a compass, and then you need to find pre-marked spots in the forest. It's like cross-country running, but you're playing chess meanwhile. I immediately fell in love with the sport, and since then I got so addicted to it that it kinda influenced some of the biggest decisions in my previous years: orienteering was one of many, but the decisive one reason for me to move for studying to Germanys orienteering centre Dresden, and it is no surprise either, that I spent my Erasmus year in the founding country Sweden.",
     }
   ]
 
@@ -79,9 +84,9 @@ html(lang="en-US")
       section
         div.content
           h1 Julius Gonsior
-          h2 #[span >] Software Engineer
-          h2 #[span >] Data Scientist
-          h2 #[span >] Orienteerer
+          h2 #[a(href="#a4") #[span >] Software Engineer]
+          h2 #[a(href="#a7") #[span >] Data Scientist]
+          h2 #[a(href="#a9") #[span >] Orienteerer]
 
     article#a2
       section
@@ -92,8 +97,8 @@ html(lang="en-US")
                 li #[a.fa-stack.fa-lg(href=contact.href aria-hidden="true") #[i.fa.fa-square.fa-stack-2x] #[i.fa.fa-stack-1x.fa-inverse(class=contact.icon title=contact.text)] #[span.sr-only #{contact.text}]]
 
     each project, index in projects
-      article(class=project.id id="a"+(index+3))
-        section
+      article(id="a"+(index+3))
+        section(id=project.id)
           div.content
             div.text
               h2 #{project.title} 
