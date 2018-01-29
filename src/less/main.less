@@ -8,12 +8,13 @@
 @import "@{fa_path}/stacked.less";
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i');
 
 @font-face {
-  font-family: 'simplifica';
-  src: url('../fonts/simplifica.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'simplifica';
+    src: url('../fonts/simplifica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -24,330 +25,332 @@
 @iconColor: #540B2F;
 
 html {
-  background-color: @bodybgColor;
-  height: 100%;
-  box-sizing: border-box;
+    background-color: @bodybgColor;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  padding: 0;
-  margin: 0;
-  box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
 }
 
 body {
-  height: 100%;
-  font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: @bodyTextColor;
-  font-size: 16px;
-  line-height: 1.4;
-  text-align: justify;
+    height: 100%;
+    font-family: 'Noto Serif', 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: @bodyTextColor;
+    font-size: 16px;
+    line-height: 1.4;
 }
 
 
 //hide all reveal.js elements
 
 .background, section {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 
 article {
-  align-items: center;
-  //justify-content: center;
-  display: flex;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  margin-left: 35vw;
-  padding-right: 2rem;
-  padding-left: 2rem;
-
-  min-height: 100%;
-
-  section{
+    align-items: center;
+    //justify-content: center;
     display: flex;
-    min-width: 500px;
-    width: 100%;
-    max-width: 40em;
-  }
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-left: 35vw;
+    padding-right: 2rem;
+    padding-left: 2rem;
 
-  &#a1 {
-    top: 0;
-    font-family: "simplifica", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    min-height: 100%;
 
-    h1 {
-      font-size: 5rem;
-      text-align: left;
-      font-weight: bold;
-      line-height: 1;
-      text-shadow: 1px 1px 1px @bodyTextColor;
+    section{
+        display: flex;
+        min-width: 500px;
+        width: 100%;
+        max-width: 40em;
     }
 
-    h2 {
-      padding-left: 1.0rem;
-      font-weight: normal;
-      font-size: 2.25rem;
-      
-      a {
-        color: @bodyTextColor;
+    &#a1 {
+        top: 0;
+        font-family: 'Noto Serif', "simplifica", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-        &:hover {
-          color: @linkHoverColor;
+        h1 {
+            font-size: 1.5rem;
+            line-height: 1.5;
+            font-weight: normal;
+            text-align: center;
+            font-style: italic;
         }
-      }
 
-      span {
-        font-weight: bold;
-      }
-    }
-  }
-
-  &#a2 {
-    #contacts {
-      text-align: left;
-      margin-bottom: 1rem;
-      max-width: 34vw;
-
-      li {
-        margin: 0.1vw;
-        font-size: 4vw;
-        list-style-type: none;
-        display: inline-block;
         a {
-          color: #444;
-          text-shadow: 2px 2px 3px #444;
+            &#link1 {
+                color: #FF7A00;
+            }
+            &#link2 {
+                color: #00A963;
+            }
+            &#link3 {
+                color: #FF496F;
+            }
+            &#link4 {
+                color: #0080B6;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
-      }
     }
-  }
+
+    &#a2 {
+        #contacts {
+            margin-bottom: 1rem;
+            max-width: 34vw;
+
+            li {
+                margin: 0.1vw;
+                font-size: 4vw;
+                list-style-type: none;
+                display: inline-block;
+                a {
+                    color: #444;
+                    text-shadow: 2px 2px 3px #444;
+                }
+            }
+        }
+    }
 }
 
 #bar {
-  width: 30vw;
-  height: 110%;
-  background: #333;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  box-shadow: 10px -5px 5px #333;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    width: 30vw;
+    height: 110%;
+    background: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    /*box-shadow: 5px -5px 5px #333;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-  #goose {
-    margin-left: 2rem;
-    margin-right: 1rem;
-    height: 40%;
-    max-height: 30rem;
-    background: url("../img/goose2t.png") no-repeat right;
-    background-size: contain;
-  }
+    #goose {
+        margin-left: 2rem;
+        margin-right: 1rem;
+        height: 40%;
+        max-height: 30rem;
+        background: url("../img/goose2t.png") no-repeat right;
+        background-size: contain;
+    }
 }
 
 
 article section span.topOffset {
-	display: block; 
-	margin-top: -50%; 
-	padding-bottom: 50%;
+    display: block; 
+    margin-top: -50%; 
+    padding-bottom: 50%;
 }
 
 ::-moz-selection {
-	color: @linkColor;
+    color: @linkColor;
 }
 
 ::selection {
-	color: @linkColor;
+    color: @linkColor;
 }
 
 h2 {
-	font-size: 2rem;
-	text-align: left;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 h3 {
-	font-size: 1.25rem;
-	font-weight: normal;
-	color: #777;
+    font-size: 1.25rem;
+    font-weight: normal;
+    color: #777;
+    margin-bottom: 2rem;
+    font-style: italic;
 }
 
 p {
-	word-wrap: break-word;
-	font-size: 1.5rem;
-	text-align: justify;
+    word-wrap: break-word;
+    font-size: 1.5rem;
+    /*text-align: justify;*/
+    line-height: 2rem;
 }
 
 a.fa-stack {
-	color: @bodyTextColor;
-	text-decoration: none;
+    color: @bodyTextColor;
+    text-decoration: none;
 
-	&:hover {
-		color: @linkHoverColor !important;
-	}
+    &:hover {
+        color: @linkHoverColor !important;
+    }
 }
 
 a {
-	color: @linkColor;
-	text-decoration: none;
+    color: @linkColor;
+    text-decoration: none;
 
-	&:hover {
-		color: @linkHoverColor;
-	} 
+    &:hover {
+        color: @linkHoverColor;
+    } 
 }
 
 h2 a.fa {
-	font-size: 2.4rem;
-	color: @bodyTextColor;
-	text-decoration: none;
+    font-size: 2.4rem;
+    color: @bodyTextColor;
+    text-decoration: none;
 
-	&:hover {
-		color: @linkHoverColor;
-	}
+    &:hover {
+        color: @linkHoverColor;
+    }
 }
 
 h2 span {
-	margin-left: 1rem;
+    margin-left: 1rem;
 }
 
 @media screen and (min-width: 1000px) {
-	#contacts {
-		max-width: 339.65px !important;
-	}
-	#contacts {
-		li {
-			font-size: 39.97px !important;
-		}
-	}
+    #contacts {
+        max-width: 339.65px !important;
+    }
+    #contacts {
+        li {
+            font-size: 39.97px !important;
+        }
+    }
 }
 
 @media  screen and (max-width: 1000px) {
-	article section {
-		min-width: 0;
-	}
+    article section {
+        min-width: 0;
+    }
 
-	p {
-		font-size: 1.25rem;
-	}
+    p {
+        font-size: 1.25rem;
+    }
 
-	h3 {
-		font-size: 1rem;
-	}
+    h3 {
+        font-size: 1rem;
+    }
 
-	h2 {
-		font-size: 1.5rem;
-	}
+    h2 {
+        font-size: 1.5rem;
+    }
 }
 
 // landscape mode phones
 @media screen and (max-height: 500px) {
-	#bar {
-		width: 20vw;
-	}
+    #bar {
+        width: 20vw;
+    }
 
-	#background {
-		width: 18vw;
-	}
+    #background {
+        width: 18vw;
+    }
 
-	article {
-		margin-left: 22vw;
-	}
+    article {
+        margin-left: 22vw;
+    }
 }
 
 
 @media screen and (max-width: 500px) {
-	body {
-		padding-top: 6.5rem;
-	}
+    body {
+        padding-top: 6.5rem;
+    }
 
-	article section {
-		display: block;
-	}
+    article section {
+        display: block;
+    }
 
-	article section span.topOffset {
-		display: block; 
-		margin-top: -6.5rem; 
-		padding-bottom: 6.5rem;
-	}
+    article section span.topOffset {
+        display: block; 
+        margin-top: -6.5rem; 
+        padding-bottom: 6.5rem;
+    }
 
-	#bar {
-		position: fixed;
-		width: 100%;
-		height: 6rem;
-		box-shadow: 0px 0px 5px 5px #333;
-	}
+    #bar {
+        position: fixed;
+        width: 100%;
+        height: 6rem;
+        box-shadow: 0px 0px 5px 5px #333;
+    }
 
-	#bar #goose {
-		height: 70%;
-		margin-right: 2rem;
-	}
+    #bar #goose {
+        height: 70%;
+        margin-right: 2rem;
+    }
 
-	article#a1 h1 {
-		position: fixed;
-		top: 0.8rem;
-		left: 2rem;
-		margin-top: 0;
-		z-index: 20;
-		font-size: 2.5rem;
-		width: 7rem;
-		color: @bodybgColor;
-	}
+    article#a1 h1 {
+        position: fixed;
+        top: 0.8rem;
+        left: 2rem;
+        margin-top: 0;
+        z-index: 20;
+        font-size: 2.5rem;
+        width: 7rem;
+        color: @bodybgColor;
+    }
 
-	article {
-		position: static;
-		margin-left: 0;
-		min-height: 0;
-		margin-bottom: 10rem;
+    article {
+        position: static;
+        margin-left: 0;
+        min-height: 0;
+        margin-bottom: 10rem;
 
-		&#a1 {
-			margin-top: 15rem;
-			margin-bottom: 15rem;
-		}
+        &#a1 {
+            margin-top: 15rem;
+            margin-bottom: 15rem;
+        }
 
-		&#a2 {
-			min-height: 30rem;
+        &#a2 {
+            min-height: 30rem;
 
-			#contacts {
-				width: 60vmin;
-				max-width: none;
+            #contacts {
+                width: 60vmin;
+                max-width: none;
 
-				li {
-					font-size: 7vmin;
-				}
-			}
-		}
-		section {
-			max-width: none;
-			min-width: 0;
-		}
+                li {
+                    font-size: 7vmin;
+                }
+            }
+        }
+        section {
+            max-width: none;
+            min-width: 0;
+        }
 
-	}
-	h2 {
-		font-size: 1.25rem;
+    }
+    h2 {
+        font-size: 1.25rem;
 
-		a.fa {
-			font-size: inherit;
-		}
-	}
+        a.fa {
+            font-size: inherit;
+        }
+    }
 
-	h3 {
-		font-size: 0.7rem;
-	}
+    h3 {
+        font-size: 0.7rem;
+    }
 
-	p {
-		font-size: 1rem;
-	}
+    p {
+        font-size: 1rem;
+    }
 
 }
 
 .sr-only {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
-	overflow: hidden;
-	clip: rect(0,0,0,0);
-	border: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
 }
