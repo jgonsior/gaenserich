@@ -80,7 +80,7 @@ html(lang="en-US")
         article#a1
             section
                 div.content
-                    h1 Hey, how nice of you to visit me here! I'm Julius and I like to #[a(id="link1" href="#projects") code], #[a(id="link2" href="#wikidata") analyse] and kinda enjoy getting #[a(id="link3" href="#ol") lost]. And if you think I can help you somehow feel free to reach out to #[a(id="link4" href="#contacts") me].
+                    h1 Hey, how nice of you to visit me here! I'm Julius and I like to #[a(id="link1" href="#projects") code], #[a(id="link2" href="#wikidata") analyse] and enjoy getting #[a(id="link3" href="#ol") lost]. <br> And if you still hope that I can help you somehow please feel free to reach out to #[a(id="link4" href="#contacts") me].
 
         article#a2
             section
@@ -88,7 +88,7 @@ html(lang="en-US")
                     div.text
                         ul#contacts
                             each contact in contacts
-                                li #[a.fa-stack.fa-lg(href=contact.href aria-hidden="true") #[i.fa.fa-square.fa-stack-2x] #[i.fa.fa-stack-1x.fa-inverse(class=contact.icon title=contact.text)] #[span.sr-only #{contact.text}]]
+                                li #[a.fa.fa-stack.fa-lg(href=contact.href aria-hidden="true") #[i.fa.fa-square.fa-stack-2x] #[i.fa.fa-stack-1x.fa-inverse(class=contact.icon title=contact.text)] #[span.sr-only #{contact.text}]]
 
         each project, index in projects
             article(id="a"+(index+3))
