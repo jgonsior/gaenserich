@@ -29,15 +29,25 @@
         {
             title: "Angry Programmers",
             id: "angry",
-            tags: "Reinforcement Learning, Java, Computer Vision",
+            tags: [
+                "Reinforcement Learning",
+                "Java", 
+                "Computer Vision"
+                ],
             url: "https://github.com/jgonsior/AngryProgrammers",
             urlAlt: "Link to the GitHub AngryProgrammers Repository",
-            text: "Together with my friend <a href='https://www.linkedin.com/in/richard-kwasnicki-9131a6122/'>Richard</a> we tried to participate in the <a href='https://aibirds.org/'>AIBirds</a> competition. Our plan was to use Reinforcement Learning to train our agent. Unfortunately we discovered, instead of solving the game properly, that the implementation of the game, with which we've been provided by the competition, wasn't suited for any type of Machine Learning. It took us around one week to play only 3.000 levels, even after months of fine-tuning and optimization. For proper Q-Learning you need way more training iterations, so after some months we decided that we should reimplement the game instead - and that we don't have the time for that, so we abandand this project.",
+            text: "Together my friend <a href='https://www.linkedin.com/in/richard-kwasnicki-9131a6122/'>Richard</a> and I tried to participate in the <a href='https://aibirds.org/'>AIBirds</a> competition. Our plan was to use Reinforcement Learning to train our agent. Unfortunately we discovered, instead of solving the game properly, that the implementation of the game, with which we've been provided by the competition, wasn't suited for any type of Machine Learning. It took us around one week to play only 3.000 levels, even after months of fine-tuning and optimization. For proper Q-Learning you need way more training iterations, so after some months we decided that we should reimplement the game instead - and that we don't have the time for that, so we abandand this project.",
         },
         {
             title: "PhotoK",
             id: "photok",
-            tags: "Python, JavaScript, Flask, Angular, REST",
+            tags: [
+                "Python", 
+                "JavaScript",
+                "Flask",
+                "Angular",
+                "REST"
+                ],
             url: "https://github.com/jgonsior/photok",
             urlAlt: "Link to the GitHub photok Repository",
             text: "One of the courses I took during my exchange studies in Sweden was \"Advanced Web Programming\". We were requested to write a <i>fully functional large-scale interactive web application. Programming focus on, state-of-the-art JavaScript framework + Service Oriented (API) Bakend. Not webdesign</i>. We developed a fully functional photo contest application, including authentication, photo upload etc.",
@@ -45,7 +55,15 @@
         {
             title: "WikiData SPARQL Query Log Analysis",
             id: "wikidata",
-            tags: "WikiData, SPARQL, Python, Java, Visualisation, Statistics, Data Science",
+            tags: [
+                "WikiData",
+                "SPARQL",
+                "Python",
+                "Java",
+                "Visualisation",
+                "Statistics",
+                "Data Science"
+                ],
             url: "https://github.com/Wikidata/QueryAnalysis",
             urlAlt: "Link to the GitHub QueryAnalysis Repository",
             text: "As a student research assistant I'm currently analysing WikiData SPARQL Query logs in the reasearch group Knowledge-Based Systems led by Prof. Dr. Markus Krötzsch at the Technische Universität Dresden.",
@@ -101,7 +119,11 @@ html(lang="en-US")
                                     span #[a.fa.fa-github(href=project.url aria-hidden="true" title=project.urlAlt)] #[span.sr-only #{project.urlAlt}]
 
                             if project.tags
-                                h3 #{project.tags}
+                                h3 
+                                    each tag, index in project.tags
+                                        span #{tag} 
+                                            if index+1 < project.tags.length 
+                                                |, 
                             p !{project.text}
 
         script(src="js/script.js")
