@@ -63,31 +63,18 @@ article {
     left: 0;
     right: 0;
     margin: auto;
-    margin-left: 35vw;
+    margin-left: 3rem;
     padding-right: 2rem;
     padding-left: 2rem;
 
     min-height: 100%;
-
-    background: 
-    linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(196, 166, 0, 0.75),
-    rgba(0, 0, 0, 0)
-    )
-    left
-    bottom
-    @bodybgColor
-    no-repeat;
-
-    background-size: 100% 1px;
 
     section{
         display: flex;
         min-width: 500px;
         width: 100%;
         max-width: 40em;
+        margin: 0 auto;
     }
 
     &#a1 {
@@ -140,31 +127,30 @@ article {
             }
         }
     }
-}
 
-#bar {
-    width: 30vw;
-    height: 110%;
-    background: #333;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    /*box-shadow: 5px -5px 5px #333;*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    &#a3 {
+        p {
+        }
 
-    #goose {
-        margin-left: 2rem;
-        margin-right: 1rem;
-        height: 40%;
-        max-height: 30rem;
-        background: url("../img/goose.png") no-repeat right;
-        background-size: contain;
+        img#goose {
+            width: 20%;
+            float: left;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+        }
     }
 }
 
+#bar {
+    width: 2px;
+    height: 900%;
+    background: @color5;
+    background: linear-gradient(@color5, @color1, @color3, @color4, @color2);
+    position: absolute;
+    top: 0;
+    left: 10vw;
+}
 
 article section span.topOffset {
     display: block; 
@@ -298,22 +284,6 @@ h2 span {
     }
 }
 
-// landscape mode phones
-@media screen and (max-height: 500px) {
-    #bar {
-        width: 20vw;
-    }
-
-    #background {
-        width: 18vw;
-    }
-
-    article {
-        margin-left: 22vw;
-    }
-}
-
-
 @media screen and (max-width: 500px) {
 
     body {
@@ -331,30 +301,19 @@ h2 span {
     }
 
     #bar {
-        visibility: hidden;
-        position: static;
-        height: initial;
-        width:100%;
-    }
-
-    #bar #goose {
-        visibility: visible;
-        height: 5rem;
-        width: 100%;
-        position: static;
-        background-position: center;
-        margin: 0;
-        margin-bottom: 1rem;
+        height: 1100%;
     }
 
     article {
         position: static;
-        margin-left: 0;
         min-height: 0;
-        margin-bottom: 10rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 2.5rem;
+        background: linear-gradient(to right,rgba(0, 0, 0, 0), rgba(196, 166, 0, 0.75), rgba(0, 0, 0, 0)) left bottom @bodybgColor no-repeat;
+        background-size: 100% 1px;
 
         &#a1 {
-            min-height: 90vw;
+            height: 100%;
             h1 {
                 font-size: 1rem; 
             }
@@ -362,6 +321,7 @@ h2 span {
 
         &#a2 {
             #contacts {
+                padding-top: 1.5rem;
                 width: 60vmin;
                 max-width: none;
 
@@ -386,6 +346,7 @@ h2 span {
 
     h3 {
         font-size: 0.8rem;
+        margin-bottom: 1rem;
     }
 
     p {
