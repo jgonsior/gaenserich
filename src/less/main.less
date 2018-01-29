@@ -158,13 +158,6 @@ article section span.topOffset {
     padding-bottom: 50%;
 }
 
-::-moz-selection {
-    color: @color1;
-}
-
-::selection {
-    color: @color1;
-}
 
 h2 {
     font-size: 2rem;
@@ -190,17 +183,22 @@ p {
         a {
             @iconColor: spin(@color2, @i * 9);
             @iconColor2: darken(@iconColor, 15%);
+            @iconColor3: lighten(@iconColor, 15%);
 
             color: @iconColor;
 
             i.fa-square:before {
-                background: -webkit-gradient(linear, left top, right bottom, from(@iconColor), to(@iconColor2));
+                background: -webkit-gradient(linear, left top, right bottom, from(@iconColor3), to(@iconColor2));
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 display: initial; 
             }            
 
-            &:hover {
+            &:hover i.fa-square:before{
+                background: -webkit-gradient(linear, left top, right bottom, from(@iconColor2), to(@iconColor3));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: initial; 
             }
         }
     }
