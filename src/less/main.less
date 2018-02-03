@@ -7,15 +7,7 @@
 @import "@{fa_path}/list.less";
 @import "@{fa_path}/stacked.less";
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i');
-
-@font-face {
-    font-family: 'simplifica';
-    src: url('../fonts/simplifica.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 
 @bodybgColor: #fafafa;
@@ -41,7 +33,7 @@ html {
 
 body {
     height: 100%;
-    font-family: 'Noto Serif', 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Noto Serif", serif;
     color: @bodyTextColor;
     font-size: 16px;
     line-height: 1.4;
@@ -54,6 +46,17 @@ body {
     visibility: hidden;
 }
 
+#bar {
+    width: 5px;
+    height: 900%;
+    background: @color5;
+    background: linear-gradient(@color5, @color1, @color3, @color4, @color2);
+    position: absolute;
+    top: 0;
+    left: 10vw;
+}
+
+
 
 article {
     align-items: center;
@@ -63,10 +66,8 @@ article {
     left: 0;
     right: 0;
     margin: auto;
-    margin-left: 12vw;
     padding-right: 2rem;
     padding-left: 2rem;
-
     min-height: 100%;
 
     section{
@@ -79,7 +80,6 @@ article {
 
     &#a1 {
         top: 0;
-        font-family: 'Noto Serif', "simplifica", "Helvetica Neue", Helvetica, Arial, sans-serif;
     
         img {
             width: 100%;
@@ -143,15 +143,6 @@ article {
     }
 }
 
-#bar {
-    width: 2px;
-    height: 900%;
-    background: @color5;
-    background: linear-gradient(@color5, @color1, @color3, @color4, @color2);
-    position: absolute;
-    top: 0;
-    left: 10vw;
-}
 
 article section span.topOffset {
     display: block; 
@@ -301,6 +292,7 @@ h2 span {
 
     #bar {
         height: 1100%;
+        left: 0;
     }
 
     article {
