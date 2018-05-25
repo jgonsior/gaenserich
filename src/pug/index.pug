@@ -15,7 +15,7 @@
     ]
 
 - 
-    var projects = [
+    var articles = [
         {
             title: "Beg your pardon, what is a gaenseri.ch?",
             id: "gaenserich",
@@ -23,12 +23,27 @@
         },
 
         {
+            title: "Music",
+            id: "music",
+            text: "In my free time I play the bass guitar in multiple bands, the most popular one were probably the not anymore existing <a href=\"https://www.facebook.com/ldracoons\">Last Dangerous Racoons</a>, you can listen to our music <a href=\"https://soundcloud.com/lastdangerousracoons\">here</a> on Soundcloud. Currently I'm working on a new project, so stay tuned!"
+        },
+
+        {
+            title: "Orienteering",
+            id: "ol",
+            text: "When I was around the age of 12 I was starting to become quite chubby, so my parents advised me to do some sports. Good luck a good friend of mine just started this totally awesome and adventurous sounding sport called <i>Orienteering</i> and dragged me along to the training. Bascially you've got a map and a compass, and then you need to find pre-marked spots in the forest. It's like cross-country running, but you're playing chess meanwhile. I immediately fell in love with the sport, and since then I got so addicted to it that it kinda influenced some of the biggest decisions in my previous years: orienteering was one of many reasons, but in the end the decisive one, for me to move for studying to Germanys orienteering centre Dresden, and it is no surprise either, that I spent my Erasmus year in the founding country of orienteering, in Sweden.",
+        }
+   ]
+
+-
+    var timeline = [
+        {
             date: 2012,
             title: "Dresden",
             id: "dresden",
             text: "In 2012 I moved to Dresden to indulge myself in the pleasures of studying computer science at the <a href=\"https://tu-dresden.de\">Technische Universität Dresden</a> in Germany."
         },
-        
+
         {
             date: "2015 - 2016",
             title: "Linköping",
@@ -42,7 +57,7 @@
             id:"esn",
             text: "After coming back from Sweden the only logical step to avoid falling into the Post-Erasmus-Depression was to help the incoming students to Dresden. That's how I ended up being part of ESN TU Dresden. Currently I'm the homepage caretaker and main treasurer, so book keeping and writing exciting finance applications."
         },
-        
+
         {
             date: "2016 Summer",
             title: "Summer internship at Moravio S.R.O.",
@@ -59,7 +74,7 @@
             text: "During my first real student trainee job I developed multiple in-house web applications for big data analysis."
 
         },
-        
+
         {
             date: "2018",
             title: "Thesis Classifcation and Analysis of Time Series",
@@ -77,7 +92,7 @@
                 ],
             text: "As a student research assistant I was analysing the SPARQL Query logs of Wikidata in the reasearch group Knowledge-Based Systems led by Prof. Dr. Markus Krötzsch at the Technische Universität Dresden. A resulting paper was being published on the <a href=\"https://iccl.inf.tu-dresden.de/web/Inproceedings3196\">LDOW-18</a> conference.",
         },
-        
+
         {
             date: "2017",
             title: "WikiData SPARQL Query Log Analysis",
@@ -125,18 +140,6 @@
             urlAlt: "Link to the GitHub photok Repository",
             text: "One of the courses I took during my exchange studies in Sweden was \"Advanced Web Programming\". We were requested to write a <i>fully functional large-scale interactive web application. Programming focus on, state-of-the-art JavaScript framework + Service Oriented (API) Bakend. Not webdesign</i>. We developed a fully functional photo contest application, including authentication, photo upload etc.",
         },
-        
-        {
-            title: "Music",
-            id: "music",
-            text: "In my free time I play the bass guitar in multiple bands, the most popular one were probably the not anymore existing <a href=\"https://www.facebook.com/ldracoons\">Last Dangerous Racoons</a>, you can listen to our music <a href=\"https://soundcloud.com/lastdangerousracoons\">here</a> on Soundcloud. Currently I'm working on a new project, so stay tuned!"
-        },
-        
-        {
-            title: "Orienteering",
-            id: "ol",
-            text: "When I was around the age of 12 I was starting to become quite chubby, so my parents advised me to do some sports. Good luck a good friend of mine just started this totally awesome and adventurous sounding sport called <i>Orienteering</i> and dragged me along to the training. Bascially you've got a map and a compass, and then you need to find pre-marked spots in the forest. It's like cross-country running, but you're playing chess meanwhile. I immediately fell in love with the sport, and since then I got so addicted to it that it kinda influenced some of the biggest decisions in my previous years: orienteering was one of many reasons, but in the end the decisive one, for me to move for studying to Germanys orienteering centre Dresden, and it is no surprise either, that I spent my Erasmus year in the founding country of orienteering, in Sweden.",
-        }
     ]
 
 doctype html
@@ -167,7 +170,7 @@ html(lang="en-US")
                             each contact in contacts
                                 li #[a.fa.fa-stack.fa-lg(href=contact.href aria-hidden="true") #[i.fa.fa-square.fa-stack-2x] #[i.fa.fa-stack-1x.fa-inverse(class=contact.icon title=contact.text)] #[span.sr-only #{contact.text}]]
 
-        each project, index in projects
+        each project, index in articles
             article(id="a"+(index+3))
                 section
                     div.content
@@ -175,8 +178,9 @@ html(lang="en-US")
 
                             if project.date
                                 span.date #{project.date}
+                                    div.timeline
 
-                            span(id=project.id class="topOffset") &nbsp;
+                                        span(id=project.id class="topOffset") &nbsp;
                             h2 #{project.title}
                                 if project.url
                                     span #[a.fa.fa-github(href=project.url aria-hidden="true" title=project.urlAlt)] #[span.sr-only #{project.urlAlt}]
@@ -188,5 +192,26 @@ html(lang="en-US")
                                             if index+1 < project.tags.length 
                                                 |, 
                             p !{project.text}
+
+        div#timeline
+            each event, index in timeline
+                article(id="a"+(index+3))
+                    section
+                        div.content
+                            span.date #{event.date}
+                            div.text
+                                span(id=event.id class="topOffset") &nbsp;
+                                h2 #{event.title}
+                                    if event.url
+                                        span #[a.fa.fa-github(href=event.url aria-hidden="true" title=event.urlAlt)] #[span.sr-only #{event.urlAlt}]
+
+                                if event.tags
+                                    h3 
+                                        each tag, index in event.tags
+                                            span #{tag} 
+                                                if index+1 < event.tags.length 
+                                                    |, 
+                                p !{event.text}
+
 
         script(src="js/script.js")
