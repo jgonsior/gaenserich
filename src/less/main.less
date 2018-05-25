@@ -43,13 +43,13 @@ body {
 
 
 //hide all reveal.js elements
-
+/*
 .background, section {
     visibility: hidden;
-}
+}*/
 
 #bar {
-    width: 2px;
+    width: 3px;
     height: 900%;
     background: @color5;
     background: linear-gradient(@color5, @color1, @color3, @color4, @color2);
@@ -59,97 +59,106 @@ body {
     z-index: 100;
 }
 
-article {
-    align-items: center;
-    //justify-content: center;
-    display: flex;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    //min-height: 100%;
-
-    section{
+#main {
+    margin-left: 10vw;
+    article {
+        align-items: center;
+        //justify-content: center;
         display: flex;
-        min-width: 500px;
-        width: 100%;
-        max-width: 40em;
-        margin: 0 auto;
-    }
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-bottom: 10rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
 
-    &#a1 {
-        top: 0;
-
-        img {
+        section{
+            display: flex;
+            min-width: 500px;
             width: 100%;
+            max-width: 40em;
+            margin: 0 auto;
         }
 
-        h1 {
+        &#a1 {
+            top: 0;
+
+            img {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                line-height: 1.5;
+                font-weight: normal;
+                text-align: center;
+                font-style: italic;
+                margin-top: 2rem;
+            }
+
+            a {
+                &#link1 {
+                    color: @color1;
+                }
+                &#link2 {
+                    color: @color2;
+                }
+                &#link3 {
+                    color: @color3;
+                }
+                &#link4 {
+                    color: @color4;
+                }
+
+                &:hover {
+                    border-bottom: 0px;
+
+                }
+            }
+        }
+
+        &#a2 {
+            #contacts {
+                margin-bottom: 1rem;
+                max-width: 34vw;
+
+                li {
+                    margin: 0.1vw;
+                    font-size: 4vw;
+                    list-style-type: none;
+                    display: inline-block;
+                }
+            }
+        }
+
+        &#a3 {
+            p {
+            }
+
+            img#goose {
+                width: 20%;
+                float: left;
+                margin-right: 1rem;
+                margin-bottom: 1rem;
+                margin-top: 1.5rem;
+            }
+        }
+
+        time {
+            background: @bodyTextColor;
+            color: @bodybgColor;
+            padding: 0.5rem;
             font-size: 1.5rem;
-            line-height: 1.5;
-            font-weight: normal;
-            text-align: center;
-            font-style: italic;
-            margin-top: 2rem;
-        }
-
-        a {
-            &#link1 {
-                color: @color1;
-            }
-            &#link2 {
-                color: @color2;
-            }
-            &#link3 {
-                color: @color3;
-            }
-            &#link4 {
-                color: @color4;
-            }
-
-            &:hover {
-                border-bottom: 0px;
-
-            }
+            border-radius: 4px;
         }
     }
-
-    &#a2 {
-        #contacts {
-            margin-bottom: 1rem;
-            max-width: 34vw;
-
-            li {
-                margin: 0.1vw;
-                font-size: 4vw;
-                list-style-type: none;
-                display: inline-block;
-            }
-        }
-    }
-
-    &#a3 {
-        p {
-        }
-
-        img#goose {
-            width: 20%;
-            float: left;
-            margin-right: 1rem;
-            margin-bottom: 1rem;
-            margin-top: 1.5rem;
-        }
+    article section span.topOffset {
+        display: block; 
+        margin-top: -50%; 
+        padding-bottom: 50%;
     }
 }
-
-article section span.topOffset {
-    display: block; 
-    margin-top: -50%; 
-    padding-bottom: 50%;
-}
-
 
 h2 {
     font-size: 2rem;
@@ -166,7 +175,7 @@ h3 {
 
 p {
     word-wrap: break-word;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 2rem;
 }
 
@@ -256,7 +265,7 @@ h2 span {
     }
 }
 
-@media  screen and (max-width: 1000px) {
+@media  screen and (max-width: 100px) {
     article section {
         min-width: 0;
     }
