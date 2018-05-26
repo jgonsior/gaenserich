@@ -10,6 +10,8 @@ var cssnano = require('gulp-cssnano');
 
 
 gulp.task('html', function() {
+    gulp.src('src/pug/impressum.html').pipe(gulp.dest('dist/'))
+
     return gulp.src('src/pug/*.pug')
         .pipe(pug())
         .pipe(gulp.dest('dist/'))

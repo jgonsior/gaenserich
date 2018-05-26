@@ -41,7 +41,6 @@
 
 html {
     background-color: @bodybgColor;
-    height: 100%;
     box-sizing: border-box;
 }
 
@@ -66,7 +65,7 @@ body {
     visibility: hidden;
 }*/
 
-body {
+#top {
     display: flex;
 }
 
@@ -88,8 +87,8 @@ body {
         right: 0;
         margin: auto;
         margin-bottom: 10rem;
-        padding-right: 2rem;
-        padding-left: 2rem;
+        padding-right: 5vw;
+        padding-left: 5vw;
 
         section{
             display: flex;
@@ -139,11 +138,12 @@ body {
         &#a2 {
             #contacts {
                 margin-bottom: 1rem;
-                max-width: 34vw;
+                max-width: 30rem;
+                margin: auto;
 
                 li {
-                    margin: 0.1vw;
-                    font-size: 4vw;
+                    margin: 0.1rem;
+                    font-size: 1.8rem;
                     list-style-type: none;
                     display: inline-block;
                 }
@@ -164,22 +164,24 @@ body {
         }
 
         time {
-            /* IDEA: zeit untereinander?
-            links für die ganzen firmen -> neue logos neben github :)
-             */
-float: left;
-background: @bodyTextColor;
-color: @bodybgColor;
-padding: 0.5rem;
-font-size: 1.5rem;
-border-radius: 4px;
+            background: @bodyTextColor;
+            color: @bodybgColor;
+            padding: 0.5rem;
+            font-size: 1.2rem;
+            border-radius: 4px;
         }
+
+        //border, fix mobile responsivene
     }
     article section span.topOffset {
         display: block; 
         margin-top: -50%; 
         padding-bottom: 50%;
     }
+}
+
+#impressum {
+    text-align: right;
 }
 
 h2 {
@@ -262,7 +264,7 @@ a {
 }
 
 
-h2 a.fa {
+h2 a.fab, a.far, a.fas {
     font-size: 2.4rem;
     color: @bodyTextColor;
     text-decoration: none;
@@ -275,7 +277,7 @@ h2 a.fa {
 h2 span {
     margin-left: 1rem;
 }
-
+/**
 @media screen and (min-width: 1000px) {
     #contacts {
         max-width: 339.65px !important;
@@ -376,7 +378,7 @@ h2 span {
     }
 
 }
-
+*/
 .sr-only {
     position: absolute;
     width: 1px;

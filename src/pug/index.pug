@@ -151,7 +151,7 @@
             prefix: "fas",
             url: "https://www.youtube.com/watch?v=G3NwJsVHtEk",
             urlAlt: "A German Schlager about Dresden",
-            text: "In 2012 I moved to Dresden to indulge myself in the pleasures of studying computer science at the <a href=\"https://tu-dresden.de\">Technische Universität Dresden</a> in Germany."
+            text: "In 2012 I moved to Dresden to indulge myself in the pleasures of studying computer science at the <a href=\"https://tu-dresden.de\">Technische Universität Dresden</a> in Germany. If my current address is what you were looking all along, here it is: <br><br> Julius Gonsior <br> Wundstr. 11 <br> 01217 Dresden <br>Germany<br><br><a id=\"impressum\" href\"impressum.html\">Impressum</a>"
         },
             ]
 
@@ -165,43 +165,44 @@ html(lang="en-US")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
     body
-        div#bar
-            //- just a stupid comment 
+        div#top
+            div#bar
+                //- just a stupid comment 
 
-        div#main
-            article#a1
-                section
-                    div.content
-                        img(src="img/julius.jpg" alt="A stupid image of me" title="Le me, sometimes thinking inside a box…")
-                        h1 Hey, how nice of you to visit me here! I'm Julius and I #[a(id="link1" href="#projects") code], #[a(id="link2" href="#music") play bass guitar] and enjoy #[a(id="link3" href="#ol") getting lost]. <br><br> And if you still hope that I can help you somehow please feel free to reach out to #[a(id="link4" href="#a2") me].
+            div#main
+                article#a1
+                    section
+                        div.content
+                            img(src="img/julius.jpg" alt="A stupid image of me" title="Le me, sometimes thinking inside a box…")
+                            h1 Hey, how nice of you to visit me here! I'm Julius and I #[a(id="link1" href="#projects") code], #[a(id="link2" href="#music") play bass guitar] and enjoy #[a(id="link3" href="#ol") getting lost]. <br><br> And if you still hope that I can help you somehow please feel free to reach out to #[a(id="link4" href="#a2") me].
 
-            article#a2
-                section
-                    div.content
-                        div.text
-                            ul#contacts
-                                each contact in contacts
-                                    li #[a.fa.fa-stack.fa-lg(href=contact.href aria-hidden="true") #[i.fa.fa-square.fa-stack-2x] #[i.fa-stack-1x.fa-inverse(class=contact.icon title=contact.text class=contact.prefix)] #[span.sr-only #{contact.text}]]
-
-            each project, index in articles
-                article(id="a"+(index+3))
+                article#a2
                     section
                         div.content
                             div.text
-                                if project.date
-                                    time #{project.date}
+                                ul#contacts
+                                    each contact in contacts
+                                        li #[a.fa.fa-stack.fa-lg(href=contact.href aria-hidden="true") #[i.fa.fa-square.fa-stack-2x] #[i.fa-stack-1x.fa-inverse(class=contact.icon title=contact.text class=contact.prefix)] #[span.sr-only #{contact.text}]]
 
-                                span(id=project.id class="topOffset") &nbsp;
-                                h2 #{project.title}
-                                    if project.url
-                                        span #[a(href=project.url aria-hidden="true" title=project.urlAlt class=project.icon class=project.prefix)] #[span.sr-only #{project.urlAlt}]
+                each project, index in articles
+                    article(id="a"+(index+3))
+                        section
+                            div.content
+                                div.text
+                                    if project.date
+                                        time #{project.date}
+        
+                                    span(id=project.id class="topOffset") &nbsp;
+                                    h2 #{project.title}
+                                        if project.url
+                                            span #[a(href=project.url aria-hidden="true" title=project.urlAlt class=project.icon class=project.prefix)] #[span.sr-only #{project.urlAlt}]
 
-                                if project.tags
-                                    h3 
-                                        each tag, index in project.tags
-                                            span #{tag} 
-                                                if index+1 < project.tags.length 
-                                                    |, 
-                                p !{project.text}
+                                    if project.tags
+                                        h3 
+                                            each tag, index in project.tags
+                                                span #{tag} 
+                                                    if index+1 < project.tags.length 
+                                                        |, 
+                                    p !{project.text}
 
 script(src="js/script.js")
