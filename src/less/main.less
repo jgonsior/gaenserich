@@ -33,12 +33,10 @@ html {
 }
 
 body {
-    height: 100%;
     font-family: "Noto Serif", serif;
     color: @bodyTextColor;
     font-size: 16px;
     line-height: 1.4;
-    padding-top: 3rem;
 }
 
 
@@ -48,23 +46,23 @@ body {
     visibility: hidden;
 }*/
 
+body {
+    display: flex;
+}
+
 #bar {
-    width: 3px;
-    height: 900%;
+    margin-left: 10vw;
     background: @color5;
-    background: linear-gradient(@color5, @color1, @color3, @color4, @color2);
-    position: absolute;
-    top: 0;
-    left: 10vw;
-    z-index: 100;
+        background: linear-gradient(@color5, @color1, @color3, @color4, @color2);
+        width: 2px;
 }
 
 #main {
-    margin-left: 10vw;
+    padding-top: 3rem;
+    margin: auto;
     article {
         align-items: center;
-        //justify-content: center;
-        display: flex;
+        justify-content: center;
         bottom: 0;
         left: 0;
         right: 0;
@@ -146,11 +144,17 @@ body {
         }
 
         time {
-            background: @bodyTextColor;
-            color: @bodybgColor;
-            padding: 0.5rem;
-            font-size: 1.5rem;
-            border-radius: 4px;
+            /* IDEA: zeit untereinander?
+            neuer thesis text
+            linköping text rein zu esn
+            links für die ganzen firmen -> neue logos neben github :)
+             */
+float: left;
+background: @bodyTextColor;
+color: @bodybgColor;
+padding: 0.5rem;
+font-size: 1.5rem;
+border-radius: 4px;
         }
     }
     article section span.topOffset {

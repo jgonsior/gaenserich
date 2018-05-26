@@ -149,7 +149,6 @@ html(lang="en-US")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
     body
-
         div#bar
             //- just a stupid comment 
 
@@ -175,7 +174,7 @@ html(lang="en-US")
                             div.text
                                 if project.date
                                     time #{project.date}
-                                
+
                                 span(id=project.id class="topOffset") &nbsp;
                                 h2 #{project.title}
                                     if project.url
