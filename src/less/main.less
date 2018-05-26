@@ -1,11 +1,33 @@
 @fa_path: "../../node_modules/@fortawesome/fontawesome-free-webfonts/less";
-
 @import "@{fa_path}/fontawesome.less";
 @import "@{fa_path}/fa-brands.less";
 @import "@{fa_path}/fa-regular.less";
 @import "@{fa_path}/fa-solid.less";
 
-//@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i');
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: 
+    local('Noto Serif Regular'),
+    local('Noto Serif-Regular'),
+    url('/fonts/noto-serif-latin-400.woff2') format('woff2'),
+    url('/fonts/noto-serif-latin-400.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: italic;
+    font-display: swap;
+    font-weight: 400;
+    src: 
+    local('Noto Serif Regular italic'),
+    local('Noto Serif-Regularitalic'),
+    url('/fonts/noto-serif-latin-400italic.woff2') format('woff2'),
+    url('/fonts/noto-serif-latin-400italic.woff') format('woff');
+}
+
 
 
 @bodybgColor: #fafafa;
@@ -51,8 +73,8 @@ body {
 #bar {
     margin-left: 10vw;
     background: @color5;
-        background: linear-gradient(@color5, @color1, @color3, @color4, @color2);
-        width: 2px;
+    background: linear-gradient(@color5, @color1, @color3, @color4, @color2);
+    width: 2px;
 }
 
 #main {

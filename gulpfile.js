@@ -30,8 +30,14 @@ gulp.task('copy', () => {
         .pipe(gulp.dest('dist/'))
 });
 
+gulp.task('fa-fonts', function() {
+    return gulp.src('node_modules/@fortawesome/fontawesome-free-webfonts/webfonts/*')
+        .pipe(gulp.dest('dist/webfonts'))
+});
+
 gulp.task('fonts', function() {
-    return gulp.src('node_modules/@fortawesome/fontawesome-free-webfonts/webfonts/*').pipe(gulp.dest('dist/webfonts'))
+    return gulp.src('node_modules/typeface-noto-serif/files/*')
+        .pipe(gulp.dest('dist/fonts'))
 });
 
 gulp.task('js', function() {
@@ -50,8 +56,8 @@ gulp.task('browser-sync', function() {
         }
     });
 
-    gulp.watch("src/**/*", ['html', 'css', 'js', 'fonts', 'copy']);
+    gulp.watch("src/**/*", ['html', 'css', 'js', 'fa-fonts', 'fonts', 'copy']);
     gulp.watch("src/**/*").on('change', browserSync.reload);
 });
 
-gulp.task('default', ['html', 'css', 'js', 'fonts', 'copy']);
+gulp.task('default', ['html', 'css', 'js', 'fa-fonts', 'fonts', 'copy']);
