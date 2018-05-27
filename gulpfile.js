@@ -7,7 +7,7 @@ var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create();
 var cssnano = require('gulp-cssnano');
-
+var uglify = require('gulp-uglify');
 
 gulp.task('html', function() {
     gulp.src('src/pug/impressum.html').pipe(gulp.dest('dist/'))
@@ -44,9 +44,10 @@ gulp.task('fonts', function() {
 
 gulp.task('js', function() {
     return gulp.src(['node_modules/scrollreveal/dist/scrollreveal.js', 'src/js/main.js'])
-        .pipe(sourcemaps.init())
+        //.pipe(sourcemaps.init())
         .pipe(concat('script.js'))
-        .pipe(sourcemaps.write())
+        //  .pipe(sourcemaps.write())
+        .pipe(uglify())
         .pipe(gulp.dest('dist/js'))
 });
 

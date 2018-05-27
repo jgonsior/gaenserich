@@ -5,6 +5,5 @@ window.sr = ScrollReveal({
 });
 
 sr.reveal('section');
-sr.reveal('nav');
 
 sr.reveal('#contacts li', 50);
