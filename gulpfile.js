@@ -38,7 +38,7 @@ gulp.task('fa-fonts', function() {
 });
 
 gulp.task('fonts', function() {
-    return gulp.src('node_modules/typeface-noto-serif/files/*')
+    return gulp.src('node_modules/typeface-montserrat/files/*')
         .pipe(gulp.dest('dist/fonts'))
 });
 

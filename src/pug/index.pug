@@ -25,14 +25,15 @@ html(lang="en-US")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
     body
-        img(src="img/julius.jpg" alt="A stupid image of me" title="Le me, sometimes thinking inside a box…")
-        article#main
-            section#content
-                p Hey, how nice of you to visit me here! 
-                p I'm Julius and I'm a computer science student living in Dresden.
-                p I'm not sure what you're looking for here, but if you still hope that I can help you somehow please feel free to reach out to me:
+        div#main
+            img(src="img/julius.jpg" alt="A stupid image of me" title="Le me, sometimes thinking inside a box…")
+            article
+                section
+                    p Hey, how nice of you to visit me here! 
+                    p I'm Julius and I'm a computer science student living in Dresden.
+                    p I'm not sure what you're looking for here, but if you still hope that I can help you somehow please feel free to reach out to me:
 
-            nav#contacts
-                ul
-                    each contact in contacts
-                        li #[a(href=contact.href aria-hidden="true") #[i.fa-2x(class=contact.icon title=contact.text class=contact.prefix)]]
+                nav
+                    ul
+                        each contact in contacts
+                            li #[a(href=contact.href aria-hidden="true") #[i.fa-2x(class=contact.icon title=contact.text class=contact.prefix)]]

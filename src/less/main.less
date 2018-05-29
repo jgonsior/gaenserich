@@ -4,8 +4,16 @@
 @import "@{fa_path}/fa-regular.less";
 @import "@{fa_path}/fa-solid.less";
 
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Sunflower|IBM+Plex+Sans|Nunito|Fira+Sans');
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: 
+    local('Montserrat Regular'),
+    local('Montserrat Regular'),
+    url('/fonts/montserrat-latin-400.woff2') format('woff2'),
+    url('/fonts/montserrat-latin-400.woff') format('woff');
+}
 
 @bodybgColor: #fefefe;
 @bodyTextColor: #454545;
@@ -28,29 +36,36 @@ html {
 }
 
 body {
-    font-family: "Montserat", "Nunito", "IBM Plex Sans", "Sunflower", "Montserrat", serif;
+    font-family: "Montserrat", "Open Sans", sans-serif;
     color: @bodyTextColor;
-    font-size: 20px;
-    margin: 1em auto;
-    max-width: 32rem;
+    font-size: 18px;
     text-align: justify;
     line-height: 1.4;
 }
 
+div#main {
+    max-width: 32rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    justify- content: center;
+}
+
 img {
-    width: 50%;
+    width: 100%;
     margin-bottom: 1rem;
 }
 
-article#main {
-    float: right;
+article {
     p {
         margin-bottom: 1rem;
     }
 }
 
 nav {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     li {
         list-style-type: none;
         display: inline-block;
@@ -62,3 +77,6 @@ nav {
         padding-right: 0.5rem;
     }
 }
+
+// extra regeln für mobile was kleiner als 32rem ist
+// make icons as large as one row?
