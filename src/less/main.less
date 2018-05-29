@@ -4,34 +4,11 @@
 @import "@{fa_path}/fa-regular.less";
 @import "@{fa_path}/fa-solid.less";
 
-@font-face {
-    font-family: 'Noto Serif';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 400;
-    src: 
-    local('Noto Serif Regular'),
-    local('Noto Serif-Regular'),
-    url('/fonts/noto-serif-latin-400.woff2') format('woff2'),
-    url('/fonts/noto-serif-latin-400.woff') format('woff');
-}
 
-@font-face {
-    font-family: 'Noto Serif';
-    font-style: italic;
-    font-display: swap;
-    font-weight: 400;
-    src: 
-    local('Noto Serif Regular italic'),
-    local('Noto Serif-Regularitalic'),
-    url('/fonts/noto-serif-latin-400italic.woff2') format('woff2'),
-    url('/fonts/noto-serif-latin-400italic.woff') format('woff');
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Sunflower|IBM+Plex+Sans|Nunito|Fira+Sans');
 
-
-
-@bodybgColor: #fafafa;
-@bodyTextColor: #555;
+@bodybgColor: #fefefe;
+@bodyTextColor: #454545;
 @color1: #FF7A00;
 @color2: #00A963;
 @color3: #FF496F;
@@ -41,7 +18,6 @@
 
 html {
     background-color: @bodybgColor;
-    box-sizing: border-box;
 }
 
 *, *:before, *:after {
@@ -52,52 +28,37 @@ html {
 }
 
 body {
-    font-family: "Open Sans Pro", "Noto Serif", serif;
+    font-family: "Montserat", "Nunito", "IBM Plex Sans", "Sunflower", "Montserrat", serif;
     color: @bodyTextColor;
-    font-size: 16px;
+    font-size: 20px;
+    margin: 1em auto;
+    max-width: 32rem;
+    text-align: justify;
     line-height: 1.4;
-    padding-top: 5vh;
-    padding-left: 5vh;
-    padding-right: 5vh;
+}
+
+img {
+    width: 50%;
+    margin-bottom: 1rem;
 }
 
 article#main {
-        margin: auto;
-        min-width: 500px;
-        width: 100%;
-        max-width: 40em;
-
-    img {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-
+    float: right;
     p {
         margin-bottom: 1rem;
     }
 }
 
 nav {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     li {
         list-style-type: none;
         display: inline-block;
     }
 
     a, a:visited {
+        font-size: 16px;
         color: @bodyTextColor;
-        padding-right: 0.7rem;
-    }
-}
-
-#impressum {
-    text-align: right;
-}
-
-@media only screen
-and (max-device-width: 500px) {
-
-    #main article section {
-        min-width: 0;
+        padding-right: 0.5rem;
     }
 }

@@ -11,7 +11,8 @@
         {href: "https://www.strava.com/athletes/15823005", icon:"fa-strava", prefix:"fab",text: "My Strava Account"},
         {href: "https://letterboxd.com/Ragadabing/", icon:"fa-film", prefix:"fas", text: "My Letterboxd Account"},
         {href: "https://www.goodreads.com/user/show/70823847-julius-gonsior", icon: "fa-book", prefix:"fas", text: "My goodreads Account"},
-        {href: "http://orienteering.org/about-orienteering/", icon: "fa-compass", prefix:"fas", text: "A link explaining what my favourite sport Orienteering is"}
+        {href: "http://orienteering.org/about-orienteering/", icon: "fa-compass", prefix:"fas", text: "A link explaining what my favourite sport Orienteering is"},
+        {href: "/impressum.html", icon: "fa-balance-scale", prefix:"fas", text: "My legal impressum, apparently needed according to European/German law?."}
     ]
 
 doctype html
@@ -24,16 +25,14 @@ html(lang="en-US")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
     body
+        img(src="img/julius.jpg" alt="A stupid image of me" title="Le me, sometimes thinking inside a box…")
         article#main
             section#content
-                img(src="img/julius.jpg" alt="A stupid image of me" title="Le me, sometimes thinking inside a box…")
-                p Hey, how nice of you to visit me here! I'm Julius and I'm a computer science student living in Dresden.
+                p Hey, how nice of you to visit me here! 
+                p I'm Julius and I'm a computer science student living in Dresden.
                 p I'm not sure what you're looking for here, but if you still hope that I can help you somehow please feel free to reach out to me:
 
             nav#contacts
                 ul
                     each contact in contacts
                         li #[a(href=contact.href aria-hidden="true") #[i.fa-2x(class=contact.icon title=contact.text class=contact.prefix)]]
-
-    p #[a(id="impressum" href="impressum.html") Impressum]
-script(src="js/script.js")
