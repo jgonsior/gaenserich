@@ -52,121 +52,41 @@ html {
 }
 
 body {
-    font-family: "Noto Serif", serif;
+    font-family: "Open Sans Pro", "Noto Serif", serif;
     color: @bodyTextColor;
     font-size: 16px;
     line-height: 1.4;
+    padding-top: 5vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
 }
 
+article#main {
+        margin: auto;
+        min-width: 500px;
+        width: 100%;
+        max-width: 40em;
 
-//hide all reveal.js elements
-/*
-.background, section {
-    visibility: hidden;
-}*/
-
-#top {
-    display: flex;
-}
-
-#bar {
-    margin-left: 10vw;
-    background: @color5;
-    background: linear-gradient(@color5, @color1, @color3, @color4, @color2);
-    width: 2px;
-}
-
-#main {
-    margin: auto;
-    
-    article {
-        margin-bottom: 20%;
-        padding-right: 5vw;
-        padding-left: 5vw;
-
-        section{
-            min-width: 500px;
-            width: 100%;
-            max-width: 40em;
-        }
-
-        &#a1 {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-            img {
-                width: 100%;
-            }
-
-            h1 {
-                font-size: 1.5rem;
-                line-height: 1.5;
-                font-weight: normal;
-                text-align: center;
-                font-style: italic;
-                margin-top: 2rem;
-            }
-
-            a {
-                &#link1 {
-                    color: @color1;
-                }
-                &#link2 {
-                    color: @color2;
-                }
-                &#link3 {
-                    color: @color3;
-                }
-                &#link4 {
-                    color: @color4;
-                }
-
-                &:hover {
-                    border-bottom: 0px;
-
-                }
-            }
-        }
-
-        &#a2 {
-            #contacts {
-                margin-bottom: 1rem;
-                max-width: 30rem;
-                margin: auto;
-
-                li {
-                    margin: 0.1rem;
-                    font-size: 1.8rem;
-                    list-style-type: none;
-                    display: inline-block;
-                }
-            }
-        }
-
-        &#a3 {
-            img#goose {
-                width: 20%;
-                float: left;
-                margin-right: 1rem;
-                margin-bottom: 1rem;
-                margin-top: 1.5rem;
-            }
-        }
-
-        time {
-            background: @bodyTextColor;
-            color: @bodybgColor;
-            padding: 0.5rem;
-            font-size: 1.2rem;
-            border-radius: 4px;
-        }
+    img {
+        width: 100%;
+        margin-bottom: 1rem;
     }
-    article section span.topOffset {
-        display: block; 
-        margin-top: -10%; 
-        padding-bottom: 10%;
+
+    p {
+        margin-bottom: 1rem;
+    }
+}
+
+nav {
+    margin-top: 1rem;
+    li {
+        list-style-type: none;
+        display: inline-block;
+    }
+
+    a, a:visited {
+        color: @bodyTextColor;
+        padding-right: 0.7rem;
     }
 }
 
@@ -174,121 +94,10 @@ body {
     text-align: right;
 }
 
-h2 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-h3 {
-    font-size: 1.25rem;
-    font-weight: normal;
-    color: #777;
-    margin-bottom: 2rem;
-    font-style: italic;
-}
-
-p {
-    word-wrap: break-word;
-    font-size: 1rem;
-    line-height: 2rem;
-}
-
-.iconColor(@n, @i: 1) when (@i =< @n) {
-    #contacts li:nth-child(@{i}n-1) {
-        a {
-            @iconColor: spin(@color2, @i * 9);
-            @iconColor2: darken(@iconColor, 15%);
-            @iconColor3: lighten(@iconColor, 15%);
-
-            color: @iconColor;
-
-            i.fa-square:before {
-                background: -webkit-gradient(linear, left top, right bottom, from(@iconColor3), to(@iconColor2));
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                display: initial; 
-            }            
-
-            &:hover i.fa-square:before{
-                background: -webkit-gradient(linear, left top, right bottom, from(@iconColor2), to(@iconColor3));
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                display: initial; 
-            }
-        }
-    }
-    .iconColor(@n, (@i + 1));
-}
-
-.iconColor(13);
-
-
-.tagColor(@n, @i: 1) when (@i =< @n) {
-    h3 span:nth-child(@{i}n-1) {
-        @tagColor: "color@{i}";
-        color: @@tagColor;
-    }
-    .tagColor(@n, (@i+1));
-}
-
-.tagColor(5);
-
-
-a {
-    color: @bodyTextColor;
-    text-decoration: none;
-    border-bottom: 1px solid @color1;
-
-    &:hover {
-        color: @color1;
-    }
-
-    &.fas, &.far, &.fab, &.fa {
-        border-bottom: 0;
-    }
-
-    &.fa-stack {
-        color: @bodyTextColor;
-        text-decoration: none;
-    }
-}
-
-
-h2 a.fab, a.far, a.fas {
-    font-size: 2.4rem;
-    color: @bodyTextColor;
-    text-decoration: none;
-
-    &:hover {
-        color: @color5;
-    }
-}
-
-h2 span {
-    margin-left: 1rem;
-}
-
-//media query der farbige bar wegnimmt sowie das min-width von section
-
 @media only screen
 and (max-device-width: 500px) {
-    #bar {
-        display: none;
-        margin: 0;
-    }
 
     #main article section {
         min-width: 0;
     }
-}
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0;
 }

@@ -59,8 +59,8 @@ gulp.task('browser-sync', function() {
         }
     });
 
-    gulp.watch("src/**/*", ['html', 'css', 'js', 'fa-fonts', 'fonts', 'copy']);
+    gulp.watch("src/**/*", ['html', 'css', 'fa-fonts', 'fonts', 'copy']);
     gulp.watch("src/**/*").on('change', browserSync.reload);
 });
 
-gulp.task('default', ['html', 'css', 'js', 'fa-fonts', 'fonts', 'copy']);
+gulp.task('default', ['html', 'css', 'fa-fonts', 'fonts', 'copy']);
