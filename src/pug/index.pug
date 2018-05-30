@@ -20,7 +20,6 @@ html(lang="en-US")
     head
         meta(charset="utf-8")
         title Julius gaenseri.ch
-        link(rel="stylesheet" type="text/css" href="css/style.css")
         link(rel="icon" type="image/x-icon" href="favicon.ico")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
@@ -31,9 +30,11 @@ html(lang="en-US")
                 section
                     p Hey, how nice of you to visit me here! 
                     p I'm Julius and I'm a computer science student living in Dresden.
-                    p I'm not sure what you're looking for here, but if you still hope that I can help you somehow please feel free to reach out to me:
+                    p I'm not sure what you're looking for here, but if you still hope that I can help you somehow please feel free to further stalk or reach out to me:
 
                 nav
                     ul
                         each contact in contacts
                             li #[a(href=contact.href aria-hidden="true") #[i.fa-2x(class=contact.icon title=contact.text class=contact.prefix)]]
+
+        link(rel="stylesheet" type="text/css" href="css/style.css")
