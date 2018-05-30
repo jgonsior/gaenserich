@@ -66,6 +66,7 @@ article {
 
 nav {
     margin-top: 1rem;
+
     li {
         list-style-type: none;
         display: inline-block;
@@ -78,5 +79,17 @@ nav {
     }
 }
 
-// extra regeln für mobile was kleiner als 32rem ist
-// make icons as large as one row?
+@media only 
+screen and (max-width: 34rem),
+screen and (max-height: 37rem) {
+    div#main {
+        padding: 10vmin;
+
+        // clear the center thingies
+        position: static;
+        top: auto;
+        left: auto;
+        margin: auto;
+        transform: none;
+    } 
+}
