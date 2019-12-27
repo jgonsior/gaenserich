@@ -14,7 +14,7 @@ languageCode = "en"
 language = "en"
 theme = "vncnt-hugo"
 title = "Julius Gaenseri.ch"
-publishDir = "docs"
+
 [blackfriday]
 extensions = ["hardLineBreak"]
 
