@@ -1,0 +1,86 @@
+==================================================================
+https://keybase.io/jgonsior
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://gaenseri.ch
+  * I am jgonsior (https://keybase.io/jgonsior) on keybase.
+  * I have a public key with fingerprint 2297 AD69 F39E C784 AAD6  521A B1A4 54C6 6015 B27E
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01206cec7523cae86fb3a3a9e78a528412c7451f54045fc1971d4e471008de069d220a",
+      "fingerprint": "2297ad69f39ec784aad6521ab1a454c66015b27e",
+      "host": "keybase.io",
+      "key_id": "b1a454c66015b27e",
+      "kid": "0101cdbe2daf8b6d147f502213eb2646dafde141b519d8b5967f47cfcaae0edd96660a",
+      "uid": "e1a4e8d35be74cb63e74a82f02412119",
+      "username": "jgonsior"
+    },
+    "merkle_root": {
+      "ctime": 1577635057,
+      "hash_meta": "2cd7ab26723fc220ae487c2c30b2df033c30ef5888c300b4aad5f384e28734b7",
+      "seqno": 14004181
+    },
+    "revoke": {
+      "sig_ids": [
+        "4b1b52415c94f5e281bba6b978a43130831e6ff78c8ad0321a750b838a20cbec0f"
+      ]
+    },
+    "service": {
+      "hostname": "gaenseri.ch",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1577635077,
+  "expire_in": 157680000,
+  "prev": "69a495fe686d16f2703529b6bd503160166b6fb34a52ee98aaca442e5d2cb3b6",
+  "seqno": 28,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owFtU3tQVUUcvoAiosyogZUFo0fL64vO2bPndUPNR4xKg6XSMKFcdvfsuffwuOd6
+7vUCKoWGJRM+QjOmyJHwBekYavnKfDSKSD4aX1ljSdZQ+RhJmvGFtofRaaZp/9nd
+3377/b79fr9dmRDjiotqWj/raF7S9jejWv/Arty4E+ICDlt6KedZwBXQ7okW6jQU
+9haYOufheAHwMqFEkYBIEFVlA4tIRBpVVCQBFQqAKFASDAnyUDKIoCmCDilUBJ5X
+dcrLmg4Aj7jRnGEGfNQO2mYgzGgB0BSky5ohaoxbhYhtJCAgLCAoQSLLvCBhoFB2
+0W+FnBtMHEYhmmpaLMY23m55/4N/rJsXiI4p0JGhYlkXoGJIPACCSDGQoczCOhWg
+gCVB01UsabJiQIUYBCHKU13XZMbp6J7XTUdZHqrqooSpAgmWRTYhFRg8YA4IguYA
+Q9QOoCLK0Pk+KxAyLZsrG80VUbugkHptywo75pKw6UAESVFkUeIlhT0QhfzeIhpG
+ji9EVxATqADRII5zFKoKAUTkMdANXhTZihqSqqpswWPHN8kQVUiBqogQK0xHiM4N
+WCwD5HkoqAKTYNOIVUCd7CHTx3wLcZ4cDmLhYDGWmH6JaNCQGIOAMZKxxioLRUHk
+VVGgsmEoKlGRzousOorEY1VUEeAJpoQ3uDllTj47YpJueqdUjyzwIRpgJ2Yq8TNN
+QdsKW8QqZAf+cDgY8jjOhEuDDrKYYu8jDi82AzrrE3YjQm3mYIC9gyH/Y5rCTKMl
+QdOmXjPQHZZVng0nD40wSllDUJMMKqus8LIBFF6UgIZlrEu8KLBekWXsNDJkLUyp
+piJEEISASjogWMTyvy4ClelEPsbJrAug8DybcmXxldFiD1dUnCt54JAe3IdbzVtr
+mysaz88Y9Phv9Yx2PpYrvne/xxFPaz/XqppefeIn9E2vn/y5b8/QMctut069eXhI
+xYG1Ey61/LrwfulXsYtIJ/n7x2vpy6t7dqSnjJn27Yr08oeb60e5555JG1CcUrHL
+rMr+c1plZ9UTqyt2TR92bmtHRcydujnpFx70/f54UXnV8k3GTvFdPaX2/vTCjJWf
+vXV2dePzNSTPfTryc1ZTw6lFTx/Kfr/946Ryqz1ndtKS8Q2Nx3hXydjj/pzcS8M7
+R7jqm4IbavNuxpbcHuteXzvLMzHzwu79V7q+WJB7+uDVPsnHN29p2N54IBHXlcX+
+8snwoR5f1ajAazVB4k6O2ZiZ487ff/j37MSjLadDF2FMU8n8p8ZFvisdPOzarT0j
+u4507duY13X5r0MP/GBm+6QdH/SaF54+rnNc/x+qU8/TEakv7CseOOBOwt38xZHK
+pc3NA8/G+1oSdqy+rlx5sP/ittSFybu3+z/qOfNcmXvDsDP33jhW0lb9zLbJJ/ed
+2NvcujGrOuPFW7mZafarD/tOist6ZfHkpsQpRu9Vd2ePrzx5uOPybyk7qzIOXk9Y
+V78y9Nzr5lX87JTsVDS1Y5Gi3ctf4r63xtW6pi2qf0uXvGv3kRU15dH3TyVmbLvw
+cu3bvvIDlVtEadCRZXXtN/YmWTV7bzQR19nx9pOZlybWfvnS3XfafhpUNeK6mfZ1
+W3RdTtrS9745JY/MJut96wZvPrN2Rkn7/E8bsjYVcLFLRw/5Bw==
+=Z5zy
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jgonsior
+
+==================================================================
