@@ -84,3 +84,79 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/jgonsior
 
 ==================================================================
+
+==================================================================
+https://keybase.io/jgonsior
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jgonsior.de
+  * I am jgonsior (https://keybase.io/jgonsior) on keybase.
+  * I have a public key with fingerprint 2297 AD69 F39E C784 AAD6  521A B1A4 54C6 6015 B27E
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01206cec7523cae86fb3a3a9e78a528412c7451f54045fc1971d4e471008de069d220a",
+      "fingerprint": "2297ad69f39ec784aad6521ab1a454c66015b27e",
+      "host": "keybase.io",
+      "key_id": "b1a454c66015b27e",
+      "kid": "0101cdbe2daf8b6d147f502213eb2646dafde141b519d8b5967f47cfcaae0edd96660a",
+      "uid": "e1a4e8d35be74cb63e74a82f02412119",
+      "username": "jgonsior"
+    },
+    "service": {
+      "hostname": "jgonsior.de",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1577635218,
+  "expire_in": 157680000,
+  "prev": "b300b4f64006a8b124b055e440e0b584ec2d0d28141bf86615913f7352d06c16",
+  "seqno": 29,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owFtUntQVFUcXgSL1gEEBIrcgFtOgoD3/VhxZ1TyhRYTjOuDabmPc+HGPuDuLi2R
+W5JAUggjkOAQOMEMxiBIiJk2Zo3DIx6GMdRohFogjPYHYRTDMHYuE/80nX/OnO98
+33e+882vMsBX5+/T2Zzekxn2uddnYEbQveE/1FaICA6pADEWIjlgeQNWCThdlhxF
+QowIiuEoLQKRoXBC5AFLywLBEzwHGJancJbEcJEhKUymSJSkZBHjGEwiAclgKMpK
+AKU5CcdRHolHZMWeBdRcVbG7oC2Ocwwv0ZxMcNCbJXl4oHCMFzCepEiRplGMEnAG
+QGG2w6kpYDiBd4JExQExeLAsx/sf/kpuFBMlAeASL7MCLWEkI1MojmMEEHCapCEs
+AYzEBArjJFagOJqRSUaURZ4HKJAkjoaeWm73sh2A7wBWIigBMKQo0ATceBaXURw2
+gGGcRnQC1c7bAGS/meWwOxWHihyNRyCar4hAK1b7yX8YiZIWOVd1uByiwwovsl2u
+XKdRE7oKcjXmW0Cw/OthERS7BGuEinygQrkdMWKQKboUzRSjGIYmYItsPAI8uYoK
+LIp9GaZZFC7tHZCvlUagqEDK9EESRWmeFTCcFFCKAiSJAlSgWBKIuIRKOKv1I7M0
+jVEcRsgM9JbgMGA0on0rz+5AjDgHg/JZ0NSpZNl5l1sFyFH9iVWEn87HX2cIj/FD
+Tp9X5hp6j7eOvR65MnurV2mDp9M/s3YFCRKDnuShdXGzhxaLhW7uo5ywScTse2EX
+saPONvjrHWvoX30ZoZ03Y/uHb1WZokpLbF5PZkzV4LrOi1+FFQ3XXArPLgHmptT2
+LOTRh4Hb1PVxV79c83DmSUnidd/61duOHPs0yt7FRCz+stVUbYtt/+Kd0ZNPn10I
+/mlTpLfqd1u66d40Xt8V+IhZ8nyfWn7O21z2cdrovaWtzfoNV7YPCpFJc7PD4z4G
+rvI1MSC1uDOheiPTOxJ4f75+rrTnSu3lipm9t82jxSMh09+aSzwxp1tJqaQ51eRp
+Ny29WpXUuHvXgLdP8A1af6n9a3VPyonQ8q5j7oz987d/Nkye2eStDhjZP9oRnRb2
+QcOdlnUZ7xtacROYckk1Nqt8NvHdffmxi1H9ux/WNuaprzgi+m/UTLqZl11Fjwuq
+P5NaKjb07lmI2PmHub9tTHyxrrs++4WLST1/zpe+Pf54sw8fGPhUQNKPv52JSF4c
+3buQzoekBDvuNo7NPkj5ZKbRWPh8lN8PnfrYpKqmBIPpSNuN49HcxuTta4aiH8T1
+NXY1ea+ZvVu6z42HdrADV6nL+md93SHvDRnyb22JHq7sTdbVWofGJg5lp0w/d6Bh
+n7d8Eam1vXTYGG7We747Nd9e0Rq09r73ujW+5YJ4rWznzY7zprLDB/MmiqwHJv4O
+ztxx18JXWBO+6dNP1aS5N0/R6j8=
+=ln+z
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jgonsior
+
+==================================================================
+
+
