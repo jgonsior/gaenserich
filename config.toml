@@ -33,10 +33,10 @@ avatar = "julius2.jpg"
 favicon = "favicon.ico"
 error404 = "There is no such page."
 university = "https://wwwdb.inf.tu-dresden.de/our-group/team/julius-gonsior/"
-key = "https://keybase.io/jgonsior/sigs/LfZ5xSVadUUkVYLj9NxNEEX5iz1e1cLUDrBf"
+# key = "https://keybase.io/jgonsior/sigs/LfZ5xSVadUUkVYLj9NxNEEX5iz1e1cLUDrBf"
 
 [params.contact]
 github = "https://github.com/jgonsior"
 linkedin = "https://linkedin.com/in/julius-gonsior-2790b3141/"
-telegram = "https://telegram.me/jgonsior"
+# telegram = "https://telegram.me/jgonsior"
 
