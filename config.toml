@@ -33,7 +33,7 @@ avatar = "julius2.jpg"
 favicon = "favicon.ico"
 error404 = "There is no such page."
 # key = "https://keybase.io/jgonsior/sigs/LfZ5xSVadUUkVYLj9NxNEEX5iz1e1cLUDrBf"
-stylesheets = ["vncnt.css", "fontello.css"]
+#stylesheets = ["vncnt.css", "fontello.css"]
 
 [params.contact]
 email = "mailto:julius@gaenseri.ch"
