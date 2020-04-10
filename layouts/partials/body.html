@@ -7,7 +7,7 @@
         </div>
         <div class="grid-container full autocenter">
             <section id="bio" aria-label="Biography">
-                <h1 class="h3-like" aria-level="1" aria-label="Name">{{ .Site.Params.author }}</h1>
+                <h1 class="h3-like" aria-level="1" aria-label="Name"><strong>{{ .Site.Params.author }}</strong></h1>
                 <p class="reset-margin" title="About" aria-label="About">{{ .Site.Params.bio | markdownify }}
                     <br> {{ .Site.Params.secondLine | markdownify }}
                     <br> {{ .Site.Params.thirdLine | markdownify }}

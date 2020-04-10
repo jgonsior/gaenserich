@@ -116,6 +116,7 @@ p.reset-margin {
     border-bottom: none;
     position: relative;
     color: #555555;
+    margin-right: 0.6rem;
 }
 
 /* Larger than mobile (default point when grid becomes active) */

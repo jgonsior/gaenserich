@@ -8,6 +8,7 @@ buildExpired = false
 # enable this to make all relative URLs relative to content root. Note that this does not affect absolute URLs.
 relativeURLs = true
 disableRSS = true
+disableKinds = ["taxonomy", "taxonomyTerm", "section", "sitemap", "tags", "categories"]
 enableRobotsTXT = true
 editor = "nvim"
 languageCode = "en"
@@ -40,3 +41,7 @@ github = "https://github.com/jgonsior"
 linkedin = "https://linkedin.com/in/julius-gonsior-2790b3141/"
 # telegram = "https://telegram.me/jgonsior"
 
+
+[taxonomies]
+    category = "categories"
+    tag = "tags"
