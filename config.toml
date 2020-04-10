@@ -25,7 +25,6 @@ posts = "posts/:slug/"
 
 [params]
 author = "Julius Gonsior"
-email = "julius@gaenseri.ch"
 description = "Hello my friend!"
 bio = "Hey! How nice of you to visit me here!"
 secondLine = "If you feel like I can help you somehow"
@@ -33,13 +32,14 @@ thirdLine = "please reach out to me:"
 avatar = "julius2.jpg"
 favicon = "favicon.ico"
 error404 = "There is no such page."
-university = "https://wwwdb.inf.tu-dresden.de/our-group/team/julius-gonsior/"
 # key = "https://keybase.io/jgonsior/sigs/LfZ5xSVadUUkVYLj9NxNEEX5iz1e1cLUDrBf"
-stylesheets = ["vncnt.css", "all.min.css"]
+stylesheets = ["vncnt.css", "fontello.css"]
 
 [params.contact]
+email = "mailto:julius@gaenseri.ch"
 github = "https://github.com/jgonsior"
 linkedin = "https://linkedin.com/in/julius-gonsior-2790b3141/"
+university = "https://wwwdb.inf.tu-dresden.de/our-group/team/julius-gonsior/"
 # telegram = "https://telegram.me/jgonsior"
 
 
