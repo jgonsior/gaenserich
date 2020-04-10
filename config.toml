@@ -35,7 +35,7 @@ favicon = "favicon.ico"
 error404 = "There is no such page."
 university = "https://wwwdb.inf.tu-dresden.de/our-group/team/julius-gonsior/"
 # key = "https://keybase.io/jgonsior/sigs/LfZ5xSVadUUkVYLj9NxNEEX5iz1e1cLUDrBf"
-stylesheets = ["vncnt.css", "all-min.css"]
+stylesheets = ["vncnt.css", "all.min.css"]
 
 [params.contact]
 github = "https://github.com/jgonsior"
