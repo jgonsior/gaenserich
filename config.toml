@@ -31,7 +31,7 @@ secondLine = "If you feel like I can help you somehow"
 thirdLine = "please reach out to me:"
 avatar = "julius.jpg"
 favicon = "favicon.ico"
-error404 = "There is no such page."
+error404 = "Sorry, there is no such page."
 # key = "https://keybase.io/jgonsior/sigs/LfZ5xSVadUUkVYLj9NxNEEX5iz1e1cLUDrBf"
 #stylesheets = ["vncnt.css", "fontello.css"]
 
