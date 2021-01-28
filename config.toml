@@ -36,10 +36,11 @@ error404 = "Sorry, there is no such page."
 #stylesheets = ["vncnt.css", "fontello.css"]
 
 [params.contact]
-email = "mailto:julius@gaenseri.ch"
+mail = "mailto:julius@gaenseri.ch"
 github = "https://github.com/jgonsior"
 linkedin = "https://linkedin.com/in/julius-gonsior-2790b3141/"
 university = "https://wwwdb.inf.tu-dresden.de/our-group/team/julius-gonsior/"
+music = "https://distrokid.com/hyperfollow/faithfulnoise/faithful-noise"
 # telegram = "https://telegram.me/jgonsior"
 
 
