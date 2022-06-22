@@ -1,25 +1,27 @@
 <!-- include critical css first -->
 
 <style type="text/css">
-
-html {
+  html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     font-size: var(--base-font-size);
     scroll-behavior: smooth;
-    --base-font-size:62.5%;--grid-max-width:960px}
+    --base-font-size: 62.5%;
+    --grid-max-width: 960px;
+  }
 
-body {
-    color: #565B65;
-    line-height: 1.6
-}
+  body {
+    color: #565b65;
+    line-height: 1.6;
+  }
 
-h1,h2 {
+  h1,
+  h2 {
     margin-top: 0;
-    font-weight: 300
-}
+    font-weight: 300;
+  }
 
-.grid-container {
+  .grid-container {
     position: relative;
     max-width: var(--grid-max-width);
     margin: 0 auto;
@@ -27,54 +29,56 @@ h1,h2 {
     display: grid;
     grid-gap: 20px;
     gap: 20px;
-    grid-template-columns: minmax(200px,1fr)
-}
+    grid-template-columns: minmax(200px, 1fr);
+  }
 
-@media (min-width: 600px) {
+  @media (min-width: 600px) {
     .grid-container {
-        grid-template-columns:repeat(3,1fr);
-        padding: 10px 0
+      grid-template-columns: repeat(3, 1fr);
+      padding: 10px 0;
     }
 
     .grid-container.full {
-        grid-template-columns: 1fr
+      grid-template-columns: 1fr;
     }
-}
+  }
 
-h1.h3-like,h2.h3-like {
-    font-size: 3.0rem;
-    line-height: 1.2
-}
+  h1.h3-like,
+  h2.h3-like {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
 
-.landingpage,.error404 {
+  .landingpage,
+  .error404 {
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     max-width: 90%;
-}
+  }
 
-h1 {
-    font-family: 'Libre Baskerville',serif;
+  h1 {
+    font-family: "Libre Baskerville", serif;
     letter-spacing: 0.3rem;
-    text-shadow: 1px 1px 1px #565B6555;
-}
+    text-shadow: 1px 1px 1px #565b6555;
+  }
 
-img {
-    box-shadow: 0px 0px 4px #565B65;
-}
-p {
-    font-family: 'Libre Baskerville',serif;
+  img {
+    box-shadow: 0px 0px 4px #565b65;
+  }
+  p {
+    font-family: "Libre Baskerville", serif;
     font-size: 1.4rem;
-    letter-spacing: 0.05rem
-}
+    letter-spacing: 0.05rem;
+  }
 
-p.reset-margin {
-    margin-bottom: 0rem
-}
+  p.reset-margin {
+    margin-bottom: 0rem;
+  }
 
-.avatar {
+  .avatar {
     width: 20rem;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -82,69 +86,69 @@ p.reset-margin {
     max-width: 60%;
     box-sizing: border-box;
     display: block;
-    margin: auto
-}
+    margin: auto;
+  }
 
-.icons {
-    bottom: 0
-}
+  .icons {
+    bottom: 0;
+  }
 
-.icons h2,h3 {
-    margin-bottom: 0
-}
+  .icons h2,
+  h3 {
+    margin-bottom: 0;
+  }
 
-.icon {
-    text-rendering: geometricPrecision!important;
+  .icon {
+    text-rendering: geometricPrecision !important;
     text-decoration: none;
     border-bottom: none;
     position: relative;
     margin: -0.2rem;
-}
+  }
 
-a {
-    color: #565B65;
-}
+  a {
+    color: #565b65;
+  }
 
-@media (min-width: 600px) {
-    h1.h3-like,h2.h3-like {
-        font-size:3.6rem
+  @media (min-width: 600px) {
+    h1.h3-like,
+    h2.h3-like {
+      font-size: 3.6rem;
     }
 
     .grid-container.fivetoseven {
-        grid-template-columns: 5fr 7fr
+      grid-template-columns: 5fr 7fr;
     }
 
     .item {
-        align-self: center
+      align-self: center;
     }
 
-    .landingpage,.error404 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%,-50%);
-        max-width: 75%
+    .landingpage,
+    .error404 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      max-width: 75%;
     }
 
     .avatar {
-        max-width: 200%;
-        box-sizing: border-box;
-        float: right
+      max-width: 200%;
+      box-sizing: border-box;
+      float: right;
     }
 
     .autocenter {
-        text-align: left;
-        padding: 0 0
+      text-align: left;
+      padding: 0 0;
     }
-}
+  }
 
-@media (min-width: 900px) {
+  @media (min-width: 900px) {
     html {
-        --base-font-size:80%
+      --base-font-size: 80%;
     }
-}
-
+  }
 </style>
-
-<link rel="stylesheet" href="/css/uncritical_style.css" async>
